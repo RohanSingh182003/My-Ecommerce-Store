@@ -1,9 +1,22 @@
 import Head from 'next/head'
 import Link from 'next/link';
 import React from "react";
-import Crousal from '../components/Crousal';
+// import Crousal from '../components/Crousal';
+import { CarouselData } from '../components/ImageData';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Home() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    pauseOnHover: true
+  };
   return (
     <>
       <Head>
@@ -24,11 +37,11 @@ export default function Home() {
         </div>
       </header>
       {/* crousal starts here */}
-      <Crousal />
-      <div className="flex justify-center items-center md:hidden">
-      <img src="https://images.unsplash.com/photo-1635405050330-b0824eb1bf26?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=400&ixid=MnwxfDB8MXxyYW5kb218MHx8ZWNvbW1lcmNlfHx8fHx8MTY1Njg1NzM5Mg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1400" alt="Ecommerce"/>
-      <h1 className=' absolute z-10 text-green-50 text-lg font-extrabold opacity-80'>Welcome to MyEcommerce Store</h1>
-      </div>
+
+      <Slider {...settings}>
+        {CarouselData.map( ( item, index ) => { return <div key={index}><img src={item.image} /></div> } )}
+      </Slider>
+
       {/* product section starts here */}
       <section className="text-gray-600 body-font md:-mt-8 lg:mt-8 bg-green-50 -mt-2 flex flex-col">
         <div className="container px-5 py-10 mx-auto">
