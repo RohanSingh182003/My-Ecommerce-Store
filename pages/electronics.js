@@ -5,6 +5,9 @@ const Electronics = () => {
   return (
     <>
     <div className='flex flex-col px-0 md:px-16 lg:px-24'>
+    <h1 className='text-5xl font-semibold my-6 mx-auto md:ml-8'>Electronics
+            <span className='text-2xl ml-1 md:ml-2 text-slate-500 italic'>Section</span>
+            <span className='ml-2 text-sm text-slate-400 block md:inline mt-1 md:mt-0'>Get your fevourite electronics products now</span></h1>
 
     <Link href='/slug'><div className="w-full h-36 md:h-44 rounded-md my-2 cursor-pointer relative flex">
             <div className="w-1/3 md:w-1/4 bg-orange-400 h-full rounded-lg hover:scale-110 hover:transition-all absolute z-10"></div>

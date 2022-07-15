@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link';
 import { GoSearch } from 'react-icons/go';
 import { BsFillCartCheckFill } from 'react-icons/bs';
 
 const Navbar = () => {
+  const [dropdown, setDropdown] = useState(false)
   return (
     <>
 <header className="text-gray-600 body-font bg-green-500 sticky top-0">
@@ -23,6 +24,13 @@ const Navbar = () => {
     <span className='font-bold text-gray-50 hover:text-gray-100 cursor-pointer -ml-4'>Login</span>
     <span className='font-bold text-gray-50 hover:text-gray-100 cursor-pointer ml-10'>Become a seller</span>
     <span className='font-bold text-gray-50 hover:text-gray-100 cursor-pointer ml-10'>More</span>
+    {<div className='bg-green-50 w-fit rounded-md border absolute top-10 right-48 p-4 z-20'>
+            <ul className='space-y-2 z-20'>
+              <Link href={'/'}><li className='cursor-pointer'>24x7 Support</li></Link>
+              <Link href={'/'}><li className='cursor-pointer'>Report bug</li></Link>
+            </ul>
+            {/* onMouseOver={()=>{setDropdown(true)}} onMouseOut={()=>{setDropdown(false)}}  */}
+            </div>}
     </div>
     </nav>
     <div className="inline-flex items-center text-gray-100 border-0 py-1 px-3 hover:text-gray-200 rounded mt-4 md:mt-0 text-2xl absolute -top-2 right-2 md:top-2 "><BsFillCartCheckFill/><span className='text-xl ml-2'>cart</span>

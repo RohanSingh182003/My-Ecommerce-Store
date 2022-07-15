@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link';
 
 const SemiNavbar = () => {
+  const [dropdown, setDropdown] = useState(false)
   return (
     <>
         <header className="text-green-800 body-font bg-green-50">
@@ -12,7 +13,13 @@ const SemiNavbar = () => {
           <Link href={'/electronics'}><a className="hover:text-gray-900 text-sm font-medium md:text-md">Electronics</a></Link>
           <Link href={'/travel'}><a className="hover:text-gray-900 hidden md:block text-sm md:text-md font-medium">Travel</a></Link>
           <Link href={'/offers'}><a className="hover:text-gray-900 hidden md:block text-sm font-medium md:text-md">Top Offer</a></Link>
-          <Link href={'/'}><a className="hover:text-gray-900 hidden md:block text-sm font-medium md:text-md">More</a></Link>
+          <a onMouseOver={()=>{setDropdown(true)}} onMouseOut={()=>{setDropdown(false)}} className="hover:text-gray-900 hidden md:block text-sm font-medium md:text-md cursor-pointer">More</a>
+          {dropdown && <div onMouseOver={()=>{setDropdown(true)}} onMouseOut={()=>{setDropdown(false)}} className='bg-green-50 p-4 absolute top-24 right-16 rounded-md border -mt-2 z-10'>
+            <ul className='space-y-2'>
+              <Link href={'/'}><li className='cursor-pointer'>Latest Launch</li></Link>
+              <Link href={'/'}><li className='cursor-pointer'>Refurbrished</li></Link>
+            </ul>
+            </div>}
         </div>
       </header>
     </>
