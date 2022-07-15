@@ -1,12 +1,14 @@
 import '../styles/globals.css'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import SemiNavbar from '../components/SemiNavbar'
 
 function MyApp({ Component, pageProps }) {
   return (<>
     <Navbar/>
-  <Component {...pageProps}/>
-  <Footer/>
+    <SemiNavbar/>
+    <Component {...pageProps}/>
+    <Footer/>
   </>
   )
 }
