@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link';
 import React from "react";
-// import Crousal from '../components/Crousal';
 import { CarouselData } from '../components/ImageData';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -31,132 +30,96 @@ export default function Home() {
       </Slider>
 
       {/* product section starts here */}
-      <section className="text-gray-600 body-font md:-mt-8 lg:mt-8 bg-green-50 -mt-2 flex flex-col">
-        <div className="container px-5 py-10 mx-auto">
-          <div className="flex flex-wrap -m-4 justify-center">
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a className="block relative h-48 rounded overflow-hidden">
-                <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/420x260" />
-              </a>
-              <div className="mt-4">
-                <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-                <h2 className="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
-                <p className="mt-1">$16.00</p>
-              </div>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a className="block relative h-48 rounded overflow-hidden">
-                <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/421x261" />
-              </a>
-              <div className="mt-4">
-                <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-                <h2 className="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
-                <p className="mt-1">$21.15</p>
-              </div>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a className="block relative h-48 rounded overflow-hidden">
-                <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/422x262" />
-              </a>
-              <div className="mt-4">
-                <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-                <h2 className="text-gray-900 title-font text-lg font-medium">Neptune</h2>
-                <p className="mt-1">$12.00</p>
-              </div>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a className="block relative h-48 rounded overflow-hidden">
-                <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/423x263" />
-              </a>
-              <div className="mt-4">
-                <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-                <h2 className="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
-                <p className="mt-1">$18.40</p>
-              </div>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a className="block relative h-48 rounded overflow-hidden">
-                <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/424x264" />
-              </a>
-              <div className="mt-4">
-                <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-                <h2 className="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
-                <p className="mt-1">$16.00</p>
-              </div>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a className="block relative h-48 rounded overflow-hidden">
-                <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/425x265" />
-              </a>
-              <div className="mt-4">
-                <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-                <h2 className="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
-                <p className="mt-1">$21.15</p>
-              </div>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a className="block relative h-48 rounded overflow-hidden">
-                <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/427x267" />
-              </a>
-              <div className="mt-4">
-                <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-                <h2 className="text-gray-900 title-font text-lg font-medium">Neptune</h2>
-                <p className="mt-1">$12.00</p>
-              </div>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a className="block relative h-48 rounded overflow-hidden">
-                <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/428x268" />
-              </a>
-              <div className="mt-4">
-                <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-                <h2 className="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
-                <p className="mt-1">$18.40</p>
-              </div>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a className="block relative h-48 rounded overflow-hidden">
-                <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/428x268" />
-              </a>
-              <div className="mt-4">
-                <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-                <h2 className="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
-                <p className="mt-1">$18.40</p>
-              </div>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a className="block relative h-48 rounded overflow-hidden">
-                <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/428x268" />
-              </a>
-              <div className="mt-4">
-                <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-                <h2 className="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
-                <p className="mt-1">$18.40</p>
-              </div>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a className="block relative h-48 rounded overflow-hidden">
-                <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/428x268" />
-              </a>
-              <div className="mt-4">
-                <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-                <h2 className="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
-                <p className="mt-1">$18.40</p>
-              </div>
-            </div>
-            <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-              <a className="block relative h-48 rounded overflow-hidden">
-                <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/428x268" />
-              </a>
-              <div className="mt-4">
-                <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-                <h2 className="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
-                <p className="mt-1">$18.40</p>
-              </div>
-            </div>
+<section className="text-gray-600 body-font">
+  <div className="container px-5 py-16 mx-auto">
+    <div className="flex flex-col text-center w-full mb-20">
+      <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Welcome to our Ecommerce Store</h1>
+      <p className="lg:w-2/3 mx-auto leading-relaxed text-base">My Ecommerce store is Proudly Make in India. Here we have Extra discount for the india customers, because we believe that its our duty to deliver quality products for every Indian at low price.</p>
+    </div>
+    <div className="flex flex-wrap -m-4 justify-center">
+      <div className="lg:w-1/4 sm:w-1/3 p-4 overflow-hidden">
+        <div className="flex relative cursor-pointer">
+          <img alt="gallery" className="absolute inset-0 w-full h-52 object-cover object-center" src="https://dummyimage.com/600x360"/>
+          <div className="px-8 py-10 relative z-10 w-full border-4 h-52 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity">
+            <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory Name</h2>
+            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Product Name</h1>
+            <p className="leading-relaxed">Description of the product Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
-      </section>
+      </div>
+      <div className="lg:w-1/4 sm:w-1/3 p-4 overflow-hidden">
+        <div className="flex relative cursor-pointer">
+          <img alt="gallery" className="absolute inset-0 w-full h-52 object-cover object-center" src="https://dummyimage.com/600x360"/>
+          <div className="px-8 py-10 relative z-10 w-full border-4 h-52 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity">
+            <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory Name</h2>
+            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Product Name</h1>
+            <p className="leading-relaxed">Description of the product Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div className="lg:w-1/4 sm:w-1/3 p-4 overflow-hidden">
+        <div className="flex relative cursor-pointer">
+          <img alt="gallery" className="absolute inset-0 w-full h-52 object-cover object-center" src="https://dummyimage.com/600x360"/>
+          <div className="px-8 py-10 relative z-10 w-full border-4 h-52 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity">
+            <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory Name</h2>
+            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Product Name</h1>
+            <p className="leading-relaxed">Description of the product Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div className="lg:w-1/4 sm:w-1/3 p-4 overflow-hidden">
+        <div className="flex relative cursor-pointer">
+          <img alt="gallery" className="absolute inset-0 w-full h-52 object-cover object-center" src="https://dummyimage.com/600x360"/>
+          <div className="px-8 py-10 relative z-10 w-full border-4 h-52 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity">
+            <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory Name</h2>
+            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Product Name</h1>
+            <p className="leading-relaxed">Description of the product Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div className="lg:w-1/4 sm:w-1/3 p-4 overflow-hidden">
+        <div className="flex relative cursor-pointer">
+          <img alt="gallery" className="absolute inset-0 w-full h-52 object-cover object-center" src="https://dummyimage.com/600x360"/>
+          <div className="px-8 py-10 relative z-10 w-full border-4 h-52 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity">
+            <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory Name</h2>
+            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Product Name</h1>
+            <p className="leading-relaxed">Description of the product Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div className="lg:w-1/4 sm:w-1/3 p-4 overflow-hidden">
+        <div className="flex relative cursor-pointer">
+          <img alt="gallery" className="absolute inset-0 w-full h-52 object-cover object-center" src="https://dummyimage.com/600x360"/>
+          <div className="px-8 py-10 relative z-10 w-full border-4 h-52 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity">
+            <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory Name</h2>
+            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Product Name</h1>
+            <p className="leading-relaxed">Description of the product Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div className="lg:w-1/4 sm:w-1/3 p-4 overflow-hidden">
+        <div className="flex relative cursor-pointer">
+          <img alt="gallery" className="absolute inset-0 w-full h-52 object-cover object-center" src="https://dummyimage.com/600x360"/>
+          <div className="px-8 py-10 relative z-10 w-full border-4 h-52 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity">
+            <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory Name</h2>
+            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Product Name</h1>
+            <p className="leading-relaxed">Description of the product Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div className="lg:w-1/4 sm:w-1/3 p-4 overflow-hidden">
+        <div className="flex relative cursor-pointer">
+          <img alt="gallery" className="absolute inset-0 w-full h-52 object-cover object-center" src="https://dummyimage.com/600x360"/>
+          <div className="px-8 py-10 relative z-10 w-full border-4 h-52 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity">
+            <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory Name</h2>
+            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Product Name</h1>
+            <p className="leading-relaxed">Description of the product Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     </>
   )

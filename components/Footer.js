@@ -12,7 +12,7 @@ const Footer = () => {
         </svg>
         <span className="ml-3 text-xl">MyEcommerce</span>
       </a>
-      <p className="mt-2 text-sm text-gray-500">My Ecommerce store is Proudly Make in India. Here we have Extra discount for the india customers, because we believe that its our duty to deliver quality products for every Indian at low price</p>
+      <p className="mt-2 text-sm text-gray-500">My Ecommerce store is Proudly Make in India. Here we have Extra discount for the india customers, because we believe that its our duty to deliver quality products for every Indian at low price.</p>
     </div>
     <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
       <div className="lg:w-1/4 md:w-1/2 w-full px-4">
