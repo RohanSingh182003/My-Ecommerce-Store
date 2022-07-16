@@ -26,8 +26,8 @@ const Navbar = () => {
     <span onMouseOver={()=>{setDropdown(true)}} onMouseOut={()=>{setDropdown(false)}}  className='font-bold text-gray-50 hover:text-gray-100 cursor-pointer ml-10'>More</span>
     {dropdown && <div onMouseOver={()=>{setDropdown(true)}} onMouseOut={()=>{setDropdown(false)}}  className='bg-green-50 w-fit rounded-md border absolute right-5 lg:top-9 lg:right-48 p-4 z-20'>
             <ul className='space-y-2 z-20'>
-              <Link href={'/'}><li className='cursor-pointer'>24x7 Support</li></Link>
-              <Link href={'/'}><li className='cursor-pointer'>Report bug</li></Link>
+              <Link href={'/'}><li className='cursor-pointer text-slate-700 hover:text-slate-900'>24x7 Support</li></Link>
+              <Link href={'/'}><li className='cursor-pointer text-slate-700 hover:text-slate-900'>Report bug</li></Link>
             </ul>
             
             </div>}

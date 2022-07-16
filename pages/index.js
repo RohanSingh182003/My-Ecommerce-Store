@@ -37,83 +37,63 @@ export default function Home() {
       <p className="lg:w-2/3 mx-auto leading-relaxed text-base">My Ecommerce store is Proudly Make in India. Here we have Extra discount for the india customers, because we believe that its our duty to deliver quality products for every Indian at low price.</p>
     </div>
     <div className="flex flex-wrap -m-4 justify-center">
-      <div className="lg:w-1/4 sm:w-1/3 p-4 overflow-hidden">
+      <div className="lg:w-1/3 sm:w-1/2 p-4 overflow-hidden">
         <div className="flex relative cursor-pointer">
-          <img alt="gallery" className="absolute inset-0 w-full h-52 object-cover object-center" src="https://dummyimage.com/600x360"/>
-          <div className="px-8 py-10 relative z-10 w-full border-4 h-52 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity">
-            <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory Name</h2>
-            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Product Name</h1>
-            <p className="leading-relaxed">Description of the product Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://dummyimage.com/600x360"/>
+          <div className="px-8 py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity">
+            <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory</h2>
+            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Electronics</h1>
+            <p className="leading-relaxed">We have the best quality & newly launched electronic products at affordable price.</p>
           </div>
         </div>
       </div>
-      <div className="lg:w-1/4 sm:w-1/3 p-4 overflow-hidden">
+      <div className="lg:w-1/3 sm:w-1/2 p-4 overflow-hidden">
         <div className="flex relative cursor-pointer">
-          <img alt="gallery" className="absolute inset-0 w-full h-52 object-cover object-center" src="https://dummyimage.com/600x360"/>
-          <div className="px-8 py-10 relative z-10 w-full border-4 h-52 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity">
-            <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory Name</h2>
-            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Product Name</h1>
-            <p className="leading-relaxed">Description of the product Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://dummyimage.com/600x360"/>
+          <div className="px-8 py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity">
+            <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory</h2>
+            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Fashion</h1>
+            <p className="leading-relaxed">We have the best quality fashion wear for Men, Women, Kids at affordable price.</p>
           </div>
         </div>
       </div>
-      <div className="lg:w-1/4 sm:w-1/3 p-4 overflow-hidden">
+      <div className="lg:w-1/3 sm:w-1/2 p-4 overflow-hidden">
         <div className="flex relative cursor-pointer">
-          <img alt="gallery" className="absolute inset-0 w-full h-52 object-cover object-center" src="https://dummyimage.com/600x360"/>
-          <div className="px-8 py-10 relative z-10 w-full border-4 h-52 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity">
-            <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory Name</h2>
-            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Product Name</h1>
-            <p className="leading-relaxed">Description of the product Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://dummyimage.com/600x360"/>
+          <div className="px-8 py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity">
+            <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory</h2>
+            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Appliances</h1>
+            <p className="leading-relaxed">We have the best quality Home, Office & other useful appliances at low price.</p>
           </div>
         </div>
       </div>
-      <div className="lg:w-1/4 sm:w-1/3 p-4 overflow-hidden">
+      <div className="lg:w-1/3 sm:w-1/2 p-4 overflow-hidden">
         <div className="flex relative cursor-pointer">
-          <img alt="gallery" className="absolute inset-0 w-full h-52 object-cover object-center" src="https://dummyimage.com/600x360"/>
-          <div className="px-8 py-10 relative z-10 w-full border-4 h-52 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity">
-            <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory Name</h2>
-            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Product Name</h1>
-            <p className="leading-relaxed">Description of the product Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://dummyimage.com/600x360"/>
+          <div className="px-8 py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity">
+            <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory</h2>
+            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Grocerry</h1>
+            <p className="leading-relaxed">Get fresh grocerry in market price at your door steps.</p>
           </div>
         </div>
       </div>
-      <div className="lg:w-1/4 sm:w-1/3 p-4 overflow-hidden">
+      <div className="lg:w-1/3 sm:w-1/2 p-4 overflow-hidden hidden sm:block">
         <div className="flex relative cursor-pointer">
-          <img alt="gallery" className="absolute inset-0 w-full h-52 object-cover object-center" src="https://dummyimage.com/600x360"/>
-          <div className="px-8 py-10 relative z-10 w-full border-4 h-52 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity">
-            <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory Name</h2>
-            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Product Name</h1>
-            <p className="leading-relaxed">Description of the product Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://dummyimage.com/600x360"/>
+          <div className="px-8 py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity">
+            <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory</h2>
+            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Travel</h1>
+            <p className="leading-relaxed">Book your holiday with us all over the world now.</p>
           </div>
         </div>
       </div>
-      <div className="lg:w-1/4 sm:w-1/3 p-4 overflow-hidden">
+      <div className="lg:w-1/3 sm:w-1/2 p-4 overflow-hidden hidden sm:block">
         <div className="flex relative cursor-pointer">
-          <img alt="gallery" className="absolute inset-0 w-full h-52 object-cover object-center" src="https://dummyimage.com/600x360"/>
-          <div className="px-8 py-10 relative z-10 w-full border-4 h-52 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity">
-            <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory Name</h2>
-            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Product Name</h1>
-            <p className="leading-relaxed">Description of the product Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-        </div>
-      </div>
-      <div className="lg:w-1/4 sm:w-1/3 p-4 overflow-hidden">
-        <div className="flex relative cursor-pointer">
-          <img alt="gallery" className="absolute inset-0 w-full h-52 object-cover object-center" src="https://dummyimage.com/600x360"/>
-          <div className="px-8 py-10 relative z-10 w-full border-4 h-52 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity">
-            <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory Name</h2>
-            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Product Name</h1>
-            <p className="leading-relaxed">Description of the product Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-        </div>
-      </div>
-      <div className="lg:w-1/4 sm:w-1/3 p-4 overflow-hidden">
-        <div className="flex relative cursor-pointer">
-          <img alt="gallery" className="absolute inset-0 w-full h-52 object-cover object-center" src="https://dummyimage.com/600x360"/>
-          <div className="px-8 py-10 relative z-10 w-full border-4 h-52 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity">
-            <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory Name</h2>
-            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Product Name</h1>
-            <p className="leading-relaxed">Description of the product Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://dummyimage.com/600x360"/>
+          <div className="px-8 py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity">
+            <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory</h2>
+            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Toys</h1>
+            <p className="leading-relaxed">Get new generation toys for your new generation kids at affordable price.</p>
           </div>
         </div>
       </div>
