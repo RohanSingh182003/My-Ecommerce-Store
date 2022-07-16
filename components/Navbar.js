@@ -23,13 +23,13 @@ const Navbar = () => {
     <div className='my-2'>
     <span className='font-bold text-gray-50 hover:text-gray-100 cursor-pointer -ml-4'>Login</span>
     <span className='font-bold text-gray-50 hover:text-gray-100 cursor-pointer ml-10'>Become a seller</span>
-    <span className='font-bold text-gray-50 hover:text-gray-100 cursor-pointer ml-10'>More</span>
-    {<div className='bg-green-50 w-fit rounded-md border absolute top-10 right-48 p-4 z-20'>
+    <span onMouseOver={()=>{setDropdown(true)}} onMouseOut={()=>{setDropdown(false)}}  className='font-bold text-gray-50 hover:text-gray-100 cursor-pointer ml-10'>More</span>
+    {dropdown && <div onMouseOver={()=>{setDropdown(true)}} onMouseOut={()=>{setDropdown(false)}}  className='bg-green-50 w-fit rounded-md border absolute right-5 lg:top-9 lg:right-48 p-4 z-20'>
             <ul className='space-y-2 z-20'>
               <Link href={'/'}><li className='cursor-pointer'>24x7 Support</li></Link>
               <Link href={'/'}><li className='cursor-pointer'>Report bug</li></Link>
             </ul>
-            {/* onMouseOver={()=>{setDropdown(true)}} onMouseOut={()=>{setDropdown(false)}}  */}
+            
             </div>}
     </div>
     </nav>
