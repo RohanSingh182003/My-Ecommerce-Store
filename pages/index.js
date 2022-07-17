@@ -16,6 +16,40 @@ export default function Home() {
     autoplaySpeed: 5000,
     pauseOnHover: true
   };
+  const settings2 = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
   return (
     <>
       <Head>
@@ -29,76 +63,80 @@ export default function Home() {
         {CarouselData.map( ( item, index ) => { return <div key={index}><img src={item.image} /></div> } )}
       </Slider>
 
-      {/* product section starts here */}
-<section className="text-gray-600 body-font">
-  <div className="container px-5 py-16 mx-auto">
-    <div className="flex flex-col text-center w-full mb-20">
-      <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Welcome to our Ecommerce Store</h1>
-      <p className="lg:w-2/3 mx-auto leading-relaxed text-base">My Ecommerce store is Proudly Make in India. Here we have Extra discount for the india customers, because we believe that its our duty to deliver quality products for every Indian at low price.</p>
+      {/* Catagory section starts here */}
+<section className="text-gray-600 body-font bg-green-100 -mt-2 pb-3">
+  <div className="container px-5 pt-8 md:p-12 mx-auto">
+    <div className="flex flex-col text-center w-full mb-4">
+      {/* primary heading */}
+      <h1 className="sm:text-3xl text-2xl lg:text-4xl font-semibold title-font mb-4 text-green-900">Welcome to our Ecommerce Store</h1>
+      <p className="lg:w-2/3 mx-auto leading-relaxed text-base hidden md:block">My Ecommerce store is Proudly Make in India.Here we have Extra discount for the india customers, because we believe that its our duty to deliver quality products for every Indian at low price.</p>
+      {/* heading of collections */}
+      <h2 className='text-2xl lg:text-3xl font-medium text-green-900 italic md:my-8'>Explore <span className='ml-1 md:ml-2 text-lg text-slate-700'>all catagories</span></h2>
     </div>
     <div className="flex flex-wrap -m-4 justify-center">
-      <div className="lg:w-1/3 sm:w-1/2 p-4 overflow-hidden">
+      <div className="lg:w-1/3 w-1/2 p-4 overflow-hidden">
         <div className="flex relative cursor-pointer">
-          <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://dummyimage.com/600x360"/>
-          <div className="px-8 py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity">
+          <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8bGFwdG9wfHx8fHx8MTY1ODAyODEzMg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"/>
+          <div className="p-1 overflow-hidden text-center md:text-start md:px-8 md:py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-lime-50 opacity-0 hover:opacity-100 transition-opacity">
             <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory</h2>
-            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Electronics</h1>
+            <h1 className="title-font text-lg font-medium text-green-900 mb-3">Electronics</h1>
             <p className="leading-relaxed">We have the best quality & newly launched electronic products at affordable price.</p>
           </div>
         </div>
       </div>
-      <div className="lg:w-1/3 sm:w-1/2 p-4 overflow-hidden">
+      <div className="lg:w-1/3 w-1/2 p-4 overflow-hidden">
         <div className="flex relative cursor-pointer">
-          <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://dummyimage.com/600x360"/>
-          <div className="px-8 py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity">
+          <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://images.unsplash.com/photo-1625204614387-6509254d5b02?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFzaGlvbnx8fHx8fDE2NTgwMjg0NTQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"/>
+          <div className="p-1 overflow-hidden text-center md:text-start md:px-8 md:py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-lime-50 opacity-0 hover:opacity-100 transition-opacity">
             <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory</h2>
-            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Fashion</h1>
+            <h1 className="title-font text-lg font-medium text-green-900 mb-3">Fashion</h1>
             <p className="leading-relaxed">We have the best quality fashion wear for Men, Women, Kids at affordable price.</p>
           </div>
         </div>
       </div>
-      <div className="lg:w-1/3 sm:w-1/2 p-4 overflow-hidden">
+      <div className="lg:w-1/3 w-1/2 p-4 overflow-hidden">
         <div className="flex relative cursor-pointer">
-          <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://dummyimage.com/600x360"/>
-          <div className="px-8 py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity">
+          <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://images.unsplash.com/photo-1556910633-5099dc3971e8?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8YXBwbGlhbmNlc3x8fHx8fDE2NTgwMjg1MTM&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"/>
+          <div className="p-1 overflow-hidden text-center md:text-start md:px-8 md:py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-lime-50 opacity-0 hover:opacity-100 transition-opacity">
             <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory</h2>
-            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Appliances</h1>
+            <h1 className="title-font text-lg font-medium text-green-900 mb-3">Appliances</h1>
             <p className="leading-relaxed">We have the best quality Home, Office & other useful appliances at low price.</p>
           </div>
         </div>
       </div>
-      <div className="lg:w-1/3 sm:w-1/2 p-4 overflow-hidden">
+      <div className="lg:w-1/3 w-1/2 p-4 overflow-hidden">
         <div className="flex relative cursor-pointer">
-          <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://dummyimage.com/600x360"/>
-          <div className="px-8 py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity">
+          <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://images.unsplash.com/photo-1444459094717-a39f1e3e0903?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8ZnJ1aXRzfHx8fHx8MTY1ODAyODU1Ng&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"/>
+          <div className="p-1 overflow-hidden text-center md:text-start md:px-8 md:py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-lime-50 opacity-0 hover:opacity-100 transition-opacity">
             <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory</h2>
-            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Grocerry</h1>
+            <h1 className="title-font text-lg font-medium text-green-900 mb-3">Grocerry</h1>
             <p className="leading-relaxed">Get fresh grocerry in market price at your door steps.</p>
           </div>
         </div>
       </div>
-      <div className="lg:w-1/3 sm:w-1/2 p-4 overflow-hidden hidden sm:block">
+      <div className="lg:w-1/3 w-1/2 p-4 overflow-hidden hidden sm:block">
         <div className="flex relative cursor-pointer">
-          <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://dummyimage.com/600x360"/>
-          <div className="px-8 py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity">
+          <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://images.unsplash.com/photo-1564974944361-f22154173317?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmxpZ2h0fHx8fHx8MTY1ODAyODU5OQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"/>
+          <div className="px-8 py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-lime-50 opacity-0 hover:opacity-100 transition-opacity">
             <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory</h2>
-            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Travel</h1>
+            <h1 className="title-font text-lg font-medium text-green-900 mb-3">Travel</h1>
             <p className="leading-relaxed">Book your holiday with us all over the world now.</p>
           </div>
         </div>
       </div>
-      <div className="lg:w-1/3 sm:w-1/2 p-4 overflow-hidden hidden sm:block">
+      <div className="lg:w-1/3 w-1/2 p-4 overflow-hidden hidden sm:block">
         <div className="flex relative cursor-pointer">
-          <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://dummyimage.com/600x360"/>
-          <div className="px-8 py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-white opacity-0 hover:opacity-100 transition-opacity">
+          <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8dG95c3x8fHx8fDE2NTgwMjg2Mzc&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"/>
+          <div className="px-8 py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-lime-50 opacity-0 hover:opacity-100 transition-opacity">
             <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory</h2>
-            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Toys</h1>
+            <h1 className="title-font text-lg font-medium text-green-900 mb-3">Toys</h1>
             <p className="leading-relaxed">Get new generation toys for your new generation kids at affordable price.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
+
 </section>
 
     </>

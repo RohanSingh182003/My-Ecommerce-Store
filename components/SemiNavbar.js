@@ -18,6 +18,7 @@ const SemiNavbar = () => {
             <ul className='space-y-2'>
               <Link href={'/'}><li className='cursor-pointer hover:text-gray-900 '>Latest Launch</li></Link>
               <Link href={'/'}><li className='cursor-pointer hover:text-gray-900 '>Refurbrished</li></Link>
+              <Link href={'/'}><li className='cursor-pointer hover:text-gray-900 '>Toys & more</li></Link>
             </ul>
             </div>}
         </div>
