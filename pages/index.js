@@ -136,7 +136,25 @@ export default function Home() {
       </div>
     </div>
   </div>
+</section>
+{/* newly launch products section */}
+<section className='bg-indigo-200 w-full py-10 px-4 md:px-6 lg:px-8'>
+<h2 className='text-2xl lg:text-3xl font-medium text-indigo-900 italic mb-2 md:mb-4 ml-4 md:ml-6 lg:ml-8 text-center md:text-start'>Explore <span className='ml-1 md:ml-2 text-lg text-slate-700'>newly launched products</span></h2>
+    <div className='bg-indigo-100 rounded flex justify-evenly py-4 md:py-6 space-y-4 md:space-y-6 lg:space-y-8 flex-wrap'>
+      <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-orange-500 mx-4 mt-8 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'></div>
+      <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-orange-500 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'></div>
+      <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-orange-500 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'></div>
+      <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-orange-500 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'></div>
+      <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-orange-500 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'></div>
+      <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-orange-500 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'></div>
+    </div>
+</section>
+{/* fashion section */}
+<section className='bg-violet-200 w-full py-10 px-4'>
+<h2 className='text-2xl lg:text-3xl font-medium text-violet-900 italic mb-2 md:mb-4 ml-4 md:ml-6 lg:ml-8 text-center md:text-start'>Explore <span className='ml-1 md:ml-2 text-lg text-slate-700'>latest offers</span></h2>
+    <div className='h-96 bg-indigo-50 rounded flex justify-center'>
 
+    </div>
 </section>
 
     </>
