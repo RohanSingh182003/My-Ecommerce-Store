@@ -17,6 +17,7 @@ const SemiNavbar = () => {
           {dropdown && <div onMouseOver={()=>{setDropdown(true)}} onMouseOut={()=>{setDropdown(false)}} className='bg-green-50 p-4 absolute top-24 right-16 rounded-md border -mt-2 z-10'>
             <ul className='space-y-2'>
               <Link href={'/'}><li className='cursor-pointer hover:text-gray-900 '>Latest Launch</li></Link>
+              <Link href={'/'}><li className='cursor-pointer hover:text-gray-900 '>Skin products</li></Link>
               <Link href={'/'}><li className='cursor-pointer hover:text-gray-900 '>Refurbrished</li></Link>
               <Link href={'/'}><li className='cursor-pointer hover:text-gray-900 '>Toys & more</li></Link>
             </ul>
