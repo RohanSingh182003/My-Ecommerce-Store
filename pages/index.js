@@ -64,107 +64,200 @@ export default function Home() {
       </Slider>
 
       {/* Catagory section starts here */}
-<section className="text-gray-600 body-font bg-green-100 -mt-2 pb-3">
-  <div className="container px-5 pt-8 md:p-12 mx-auto">
-    <div className="flex flex-col text-center w-full mb-4">
-      {/* primary heading */}
-      <h1 className="sm:text-3xl text-2xl lg:text-4xl font-semibold title-font mb-4 text-green-900">Welcome to our Ecommerce Store</h1>
-      <p className="lg:w-2/3 mx-auto leading-relaxed text-base hidden md:block">My Ecommerce store is Proudly Make in India.Here we have Extra discount for the india customers, because we believe that its our duty to deliver quality products for every Indian at low price.</p>
-      {/* heading of collections */}
-      <h2 className='text-2xl lg:text-3xl font-medium text-green-900 italic md:my-8'>Explore <span className='ml-1 md:ml-2 text-lg text-slate-700'>all catagories</span></h2>
-    </div>
-    <div className="flex flex-wrap -m-4 justify-center">
-      <div className="lg:w-1/3 w-1/2 p-4 overflow-hidden">
-        <div className="flex relative cursor-pointer">
-          <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8bGFwdG9wfHx8fHx8MTY1ODAyODEzMg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"/>
-          <div className="p-1 overflow-hidden text-center md:text-start md:px-8 md:py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-lime-50 opacity-0 hover:opacity-100 transition-opacity">
-            <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory</h2>
-            <h1 className="title-font text-lg font-medium text-green-900 mb-3">Electronics</h1>
-            <p className="leading-relaxed">We have the best quality & newly launched electronic products at affordable price.</p>
+      <section className="text-gray-600 body-font bg-green-100 -mt-2 pb-3">
+        <div className="container px-5 pt-8 md:p-12 mx-auto">
+          <div className="flex flex-col text-center w-full mb-4">
+            {/* primary heading */}
+            <h1 className="sm:text-3xl text-2xl lg:text-4xl font-semibold title-font mb-4 text-green-900">Welcome to our Ecommerce Store</h1>
+            <p className="lg:w-2/3 mx-auto leading-relaxed text-base hidden md:block">My Ecommerce store is Proudly Make in India.Here we have Extra discount for the india customers, because we believe that its our duty to deliver quality products for every Indian at low price.</p>
+            {/* heading of collections */}
+            <h2 className='text-2xl lg:text-3xl font-medium text-green-900 italic md:my-8'>Explore <span className='ml-1 md:ml-2 text-lg text-slate-700'>all catagories</span></h2>
+          </div>
+          <div className="flex flex-wrap -m-4 justify-center">
+            <div className="lg:w-1/3 w-1/2 p-4 overflow-hidden">
+              <div className="flex relative cursor-pointer">
+                <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8bGFwdG9wfHx8fHx8MTY1ODAyODEzMg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" />
+                <div className="p-1 overflow-hidden text-center md:text-start md:px-8 md:py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-lime-50 opacity-0 hover:opacity-100 transition-opacity">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory</h2>
+                  <h1 className="title-font text-lg font-medium text-green-900 mb-3">Electronics</h1>
+                  <p className="leading-relaxed">We have the best quality & newly launched electronic products at affordable price.</p>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/3 w-1/2 p-4 overflow-hidden">
+              <div className="flex relative cursor-pointer">
+                <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://images.unsplash.com/photo-1625204614387-6509254d5b02?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFzaGlvbnx8fHx8fDE2NTgwMjg0NTQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" />
+                <div className="p-1 overflow-hidden text-center md:text-start md:px-8 md:py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-lime-50 opacity-0 hover:opacity-100 transition-opacity">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory</h2>
+                  <h1 className="title-font text-lg font-medium text-green-900 mb-3">Fashion</h1>
+                  <p className="leading-relaxed">We have the best quality fashion wear for Men, Women, Kids at affordable price.</p>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/3 w-1/2 p-4 overflow-hidden">
+              <div className="flex relative cursor-pointer">
+                <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://images.unsplash.com/photo-1556910633-5099dc3971e8?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8YXBwbGlhbmNlc3x8fHx8fDE2NTgwMjg1MTM&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" />
+                <div className="p-1 overflow-hidden text-center md:text-start md:px-8 md:py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-lime-50 opacity-0 hover:opacity-100 transition-opacity">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory</h2>
+                  <h1 className="title-font text-lg font-medium text-green-900 mb-3">Appliances</h1>
+                  <p className="leading-relaxed">We have the best quality Home, Office & other useful appliances at low price.</p>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/3 w-1/2 p-4 overflow-hidden">
+              <div className="flex relative cursor-pointer">
+                <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://images.unsplash.com/photo-1444459094717-a39f1e3e0903?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8ZnJ1aXRzfHx8fHx8MTY1ODAyODU1Ng&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" />
+                <div className="p-1 overflow-hidden text-center md:text-start md:px-8 md:py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-lime-50 opacity-0 hover:opacity-100 transition-opacity">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory</h2>
+                  <h1 className="title-font text-lg font-medium text-green-900 mb-3">Grocerry</h1>
+                  <p className="leading-relaxed">Get fresh grocerry in market price at your door steps.</p>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/3 w-1/2 p-4 overflow-hidden hidden sm:block">
+              <div className="flex relative cursor-pointer">
+                <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://images.unsplash.com/photo-1564974944361-f22154173317?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmxpZ2h0fHx8fHx8MTY1ODAyODU5OQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" />
+                <div className="px-8 py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-lime-50 opacity-0 hover:opacity-100 transition-opacity">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory</h2>
+                  <h1 className="title-font text-lg font-medium text-green-900 mb-3">Travel</h1>
+                  <p className="leading-relaxed">Book your holiday with us all over the world now.</p>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/3 w-1/2 p-4 overflow-hidden hidden sm:block">
+              <div className="flex relative cursor-pointer">
+                <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8dG95c3x8fHx8fDE2NTgwMjg2Mzc&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" />
+                <div className="px-8 py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-lime-50 opacity-0 hover:opacity-100 transition-opacity">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory</h2>
+                  <h1 className="title-font text-lg font-medium text-green-900 mb-3">Toys</h1>
+                  <p className="leading-relaxed">Get new generation toys for your new generation kids at affordable price.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="lg:w-1/3 w-1/2 p-4 overflow-hidden">
-        <div className="flex relative cursor-pointer">
-          <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://images.unsplash.com/photo-1625204614387-6509254d5b02?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFzaGlvbnx8fHx8fDE2NTgwMjg0NTQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"/>
-          <div className="p-1 overflow-hidden text-center md:text-start md:px-8 md:py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-lime-50 opacity-0 hover:opacity-100 transition-opacity">
-            <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory</h2>
-            <h1 className="title-font text-lg font-medium text-green-900 mb-3">Fashion</h1>
-            <p className="leading-relaxed">We have the best quality fashion wear for Men, Women, Kids at affordable price.</p>
+      </section>
+      {/* newly launch products section */}
+      <section className='bg-indigo-200 w-full py-10 px-4 md:px-6 lg:px-8 my-2 md:my-0'>
+        <h2 className='text-2xl lg:text-3xl font-medium text-indigo-900 italic mb-2 md:mb-4 ml-4 md:ml-6 lg:ml-8 text-center md:text-start'>Explore <span className='ml-1 md:ml-2 text-lg text-slate-700'>newly launched products</span></h2>
+        <div className='bg-indigo-100 rounded flex justify-evenly py-4 md:py-6 space-y-10 flex-wrap'>
+          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-indigo-100 mx-4 mt-8 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
+            <h3 className='text-lg italic font-medium text-center -mt-8 text-indigo-900 '>Newly <span className='text-gray-700 ml-1 font-normal'> launched laptops</span></h3>
+            <div className='flex flex-wrap justify-evenly items-center mt-1'>
+              <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover' src="https://images.unsplash.com/photo-1575024357670-2b5164f470c3?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8bGFwdG9wfHx8fHx8MTY1ODE1NjQ5MA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
+              </div>
+              <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover' src="https://images.unsplash.com/photo-1621606453029-5656bd7fa6c1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8bGFwdG9wfHx8fHx8MTY1ODE1NjgxOQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
+              </div>
+              <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover' src="https://images.unsplash.com/photo-1629131726692-1accd0c53ce0?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8bGFwdG9wfHx8fHx8MTY1ODE1NzAzMQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
+              </div>
+              <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover' src="https://images.unsplash.com/photo-1485988412941-77a35537dae4?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8bGFwdG9wfHx8fHx8MTY1ODE1NzExNQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
+              </div>
+            </div>
+            <button className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+          </div>
+          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-indigo-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
+            <h3 className='text-lg italic font-medium text-center -mt-8 text-indigo-900 '>Newly <span className='text-gray-700 ml-1 font-normal'> launched mobiles</span></h3>
+            <div className='flex flex-wrap justify-evenly items-center mt-1'>
+              <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover' src="https://images.unsplash.com/photo-1452993912631-49cff82efb5e?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8bW9iaWxlfHx8fHx8MTY1ODE1ODAxMQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
+              </div>
+              <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover' src="https://images.unsplash.com/photo-1510166089176-b57564a542b1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8bW9iaWxlfHx8fHx8MTY1ODE1ODA1MA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
+              </div>
+              <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover' src="https://images.unsplash.com/photo-1502201563651-826cbb30c3dd?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8bW9iaWxlfHx8fHx8MTY1ODE1ODA3OQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
+              </div>
+              <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover' src="https://images.unsplash.com/photo-1549921296-3b0f9a35af35?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8bW9iaWxlfHx8fHx8MTY1ODE1ODEwMw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
+              </div>
+            </div>
+            <button className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+          </div>
+          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-indigo-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
+            <h3 className='text-lg italic font-medium text-center -mt-8 text-indigo-900 '>Newly <span className='text-gray-700 ml-1 font-normal'> launched accessories</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
+              <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover' src="https://images.unsplash.com/photo-1608539733292-190446b22b83?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8YWNjZXNzb3JpZXN8fHx8fHwxNjU4MTU4MjE0&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
+              </div>
+              <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover' src="https://images.unsplash.com/photo-1592842312573-dca0b185d2e0?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8YWNjZXNzb3JpZXN8fHx8fHwxNjU4MTU4MjU2&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
+              </div>
+              <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover' src="https://images.unsplash.com/photo-1579362093956-a743707ecac1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8YWNjZXNzb3JpZXN8fHx8fHwxNjU4MTU4MzAz&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
+              </div>
+              <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover' src="https://images.unsplash.com/photo-1578254869543-b100332e3132?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8YWNjZXNzb3JpZXN8fHx8fHwxNjU4MTU4MzYw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
+              </div>
+            </div>
+            <button className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+          </div>
+          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-indigo-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-indigo-900 '>Newly <span className='text-gray-700 ml-1 font-normal'> launched jeans</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
+            <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover' src="https://images.unsplash.com/photo-1622225921810-f25552775318?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8amVhbnN8fHx8fHwxNjU4MTU4NDc0&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
+            </div>
+            <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover' src="https://images.unsplash.com/photo-1511770378289-4217b08a434e?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8amVhbnN8fHx8fHwxNjU4MTU4NDk2&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
+            </div>
+            <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover' src="https://images.unsplash.com/photo-1560243563-062bfc001d68?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8amVhbnN8fHx8fHwxNjU4MTU4NTQy&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
+            </div>
+            <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover' src="https://images.unsplash.com/photo-1520517238863-2a437c6b1b08?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8amVhbnN8fHx8fHwxNjU4MTU4NTY0&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
+            </div>
+          </div>
+            <button className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+          </div>
+          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-indigo-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-indigo-900 '>Newly <span className='text-gray-700 ml-1 font-normal'> launched jackets</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
+            <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover' src="https://images.unsplash.com/photo-1585075411755-9338ea8b4c66?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8amFja2V0fHx8fHx8MTY1ODE2MDMwNA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
+            </div>
+            <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover' src="https://images.unsplash.com/photo-1580742471944-c1c187a943e2?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8amFja2V0fHx8fHx8MTY1ODE2MDM1Mg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
+            </div>
+            <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover' src="https://images.unsplash.com/photo-1541400233204-99b5378d5a9f?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8amFja2V0fHx8fHx8MTY1ODE2MDM3Ng&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
+            </div>
+            <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover' src="https://images.unsplash.com/photo-1591851395349-6d8c2fe76e24?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8amFja2V0fHx8fHx8MTY1ODE2MDQwMg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
+            </div>
+          </div>
+            <button className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+          </div>
+          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-indigo-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-indigo-900 '>Newly <span className='text-gray-700 ml-1 font-normal'> launched skin products</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
+            <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover px-3' src="https://media.istockphoto.com/photos/nude-eyeshadow-palette-and-makeup-artists-tools-on-a-marble-vanity-picture-id1370468785?b=1&k=20&m=1370468785&s=170667a&w=0&h=N194rFK8f58gVbr9PkjMsTAJuLZ2CkQwwSYFvNDEybo=" />
+            </div>
+            <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover' src="https://4.imimg.com/data4/IO/II/ANDROID-27043381/product-500x500.jpeg" />
+            </div>
+            <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvIKUHSrudmPMPBABg2cnPhACpYqC_fg-PA_JrI4rMQ9xcp8tvtyuepn5T8hsfHzLp5SY&usqp=CAU" />
+            </div>
+            <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover' src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1624397359-leg-makeup-westmore-beauty-1624397347.jpg?crop=1xw:1xh;center,top&resize=480:*" />
+            </div>
+          </div>
+            <button className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
           </div>
         </div>
-      </div>
-      <div className="lg:w-1/3 w-1/2 p-4 overflow-hidden">
-        <div className="flex relative cursor-pointer">
-          <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://images.unsplash.com/photo-1556910633-5099dc3971e8?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8YXBwbGlhbmNlc3x8fHx8fDE2NTgwMjg1MTM&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"/>
-          <div className="p-1 overflow-hidden text-center md:text-start md:px-8 md:py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-lime-50 opacity-0 hover:opacity-100 transition-opacity">
-            <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory</h2>
-            <h1 className="title-font text-lg font-medium text-green-900 mb-3">Appliances</h1>
-            <p className="leading-relaxed">We have the best quality Home, Office & other useful appliances at low price.</p>
-          </div>
-        </div>
-      </div>
-      <div className="lg:w-1/3 w-1/2 p-4 overflow-hidden">
-        <div className="flex relative cursor-pointer">
-          <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://images.unsplash.com/photo-1444459094717-a39f1e3e0903?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8ZnJ1aXRzfHx8fHx8MTY1ODAyODU1Ng&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"/>
-          <div className="p-1 overflow-hidden text-center md:text-start md:px-8 md:py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-lime-50 opacity-0 hover:opacity-100 transition-opacity">
-            <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory</h2>
-            <h1 className="title-font text-lg font-medium text-green-900 mb-3">Grocerry</h1>
-            <p className="leading-relaxed">Get fresh grocerry in market price at your door steps.</p>
-          </div>
-        </div>
-      </div>
-      <div className="lg:w-1/3 w-1/2 p-4 overflow-hidden hidden sm:block">
-        <div className="flex relative cursor-pointer">
-          <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://images.unsplash.com/photo-1564974944361-f22154173317?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmxpZ2h0fHx8fHx8MTY1ODAyODU5OQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"/>
-          <div className="px-8 py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-lime-50 opacity-0 hover:opacity-100 transition-opacity">
-            <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory</h2>
-            <h1 className="title-font text-lg font-medium text-green-900 mb-3">Travel</h1>
-            <p className="leading-relaxed">Book your holiday with us all over the world now.</p>
-          </div>
-        </div>
-      </div>
-      <div className="lg:w-1/3 w-1/2 p-4 overflow-hidden hidden sm:block">
-        <div className="flex relative cursor-pointer">
-          <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8dG95c3x8fHx8fDE2NTgwMjg2Mzc&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400"/>
-          <div className="px-8 py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-lime-50 opacity-0 hover:opacity-100 transition-opacity">
-            <h2 className="tracking-widest text-sm title-font font-medium text-slate-400 mb-1">Catagory</h2>
-            <h1 className="title-font text-lg font-medium text-green-900 mb-3">Toys</h1>
-            <p className="leading-relaxed">Get new generation toys for your new generation kids at affordable price.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{/* newly launch products section */}
-<section className='bg-indigo-200 w-full py-10 px-4 md:px-6 lg:px-8'>
-<h2 className='text-2xl lg:text-3xl font-medium text-indigo-900 italic mb-2 md:mb-4 ml-4 md:ml-6 lg:ml-8 text-center md:text-start'>Explore <span className='ml-1 md:ml-2 text-lg text-slate-700'>newly launched products</span></h2>
-    <div className='bg-indigo-100 rounded flex justify-evenly py-4 md:py-6 space-y-10 flex-wrap'>
-      <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-orange-500 mx-4 mt-8 rounded-md lg:rounded-lg shadow-sm md:shadow-lg hover:scale-105 transition-all hover:shadow-2xl cursor-pointer'>
-        <h3 className='text-lg italic font-medium text-center -mt-8 text-indigo-900 '>Newly <span className='text-gray-700 ml-1 font-normal'> launched laptops</span></h3>
-      </div>
-      <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-orange-500 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg hover:scale-105 transition-all hover:shadow-2xl cursor-pointer'>        
-      <h3 className='text-lg italic font-medium text-center -mt-8 text-indigo-900 '>Newly <span className='text-gray-700 ml-1 font-normal'> launched mobiles</span></h3>
-      </div>
-      <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-orange-500 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg hover:scale-105 transition-all hover:shadow-2xl cursor-pointer'>
-       <h3 className='text-lg italic font-medium text-center -mt-8 text-indigo-900 '>Newly <span className='text-gray-700 ml-1 font-normal'> launched accessories</span></h3>
-      </div>
-      <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-orange-500 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg hover:scale-105 transition-all hover:shadow-2xl cursor-pointer'><h3 className='text-lg italic font-medium text-center -mt-8 text-indigo-900 '>Newly <span className='text-gray-700 ml-1 font-normal'> launched jeans</span></h3>
-      </div>
-      <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-orange-500 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg hover:scale-105 transition-all hover:shadow-2xl cursor-pointer'><h3 className='text-lg italic font-medium text-center -mt-8 text-indigo-900 '>Newly <span className='text-gray-700 ml-1 font-normal'> launched jackets</span></h3>
-      </div>
-      <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-orange-500 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg hover:scale-105 transition-all hover:shadow-2xl cursor-pointer'><h3 className='text-lg italic font-medium text-center -mt-8 text-indigo-900 '>Newly <span className='text-gray-700 ml-1 font-normal'> launched skin products</span></h3>
-      </div>
-    </div>
-</section>
-{/* fashion section */}
-<section className='bg-violet-200 w-full py-10 px-4'>
-<h2 className='text-2xl lg:text-3xl font-medium text-violet-900 italic mb-2 md:mb-4 ml-4 md:ml-6 lg:ml-8 text-center md:text-start'>Explore <span className='ml-1 md:ml-2 text-lg text-slate-700'>latest offers</span></h2>
-    <div className='h-96 bg-indigo-50 rounded flex justify-center'>
+      </section>
+      {/* offers section */}
+      <section className='bg-sky-200 w-full py-10 px-4'>
+        <h2 className='text-2xl lg:text-3xl font-medium text-sky-900 italic mb-2 md:mb-4 ml-4 md:ml-6 lg:ml-8 text-center md:text-start'>Explore <span className='ml-1 md:ml-2 text-lg text-slate-700'>latest offers</span></h2>
+        <div className='h-96 bg-sky-50 rounded flex justify-center'>
 
-    </div>
-</section>
+        </div>
+      </section>
+      {/* refurbrished section */}
+      <section className='bg-violet-200 w-full py-10 px-4'>
+        <h2 className='text-2xl lg:text-3xl font-medium text-violet-900 italic mb-2 md:mb-4 ml-4 md:ml-6 lg:ml-8 text-center md:text-start'>Explore <span className='ml-1 md:ml-2 text-lg text-slate-700'>new refurbrished collection</span></h2>
+        <div className='h-96 bg-indigo-50 rounded flex justify-center'>
+
+        </div>
+      </section>
 
     </>
   )
