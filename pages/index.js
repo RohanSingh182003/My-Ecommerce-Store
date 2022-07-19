@@ -211,17 +211,224 @@ export default function Home() {
         </div>
       </section>
       {/* offers section */}
-      <section className='bg-sky-200 w-full py-10 px-4'>
+      <section className='bg-sky-200 w-full py-10 px-4 md:px-6 lg:px-8 my-2 md:my-0'>
         <h2 className='text-2xl lg:text-3xl font-medium text-sky-900 italic mb-2 md:mb-4 ml-4 md:ml-6 lg:ml-8 text-center md:text-start'>Explore <span className='ml-1 md:ml-2 text-lg text-slate-700'>latest offers</span></h2>
-        <div className='h-96 bg-sky-50 rounded flex justify-center'>
-
+        <div className='bg-sky-50 rounded flex justify-center'>
+        <div className='bg-sky-100 rounded flex justify-evenly py-4 md:py-6 space-y-10 flex-wrap'>
+          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-sky-100 mx-4 mt-8 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
+            <h3 className='text-lg italic font-medium text-center -mt-8 text-sky-900 '>Latest offers <span className='text-gray-700 ml-1 font-normal'> on laptops</span></h3>
+            <div className='flex flex-wrap justify-evenly items-center mt-1'>
+              <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtfVaCdPVQRMS7RIhgjBLDuALhWy5DWlNe_M0fgVSt9qu7u1SHnjdMdmN6tVddQ5OLn1M&usqp=CAU" />
+              </div>
+              <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRPUYTbCrEof-5dBu1dM9zxdLlS4YxSy9DIw&usqp=CAU" />
+              </div>
+              <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcdVtiMFYjhcpeCG5DbrwqM-qGkngFxBr0sBdlse_iSR2ebo2MwtZ7eSLfGM6TTUNx6G0&usqp=CAU" />
+              </div>
+              <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgJm33v_KJIB56QqwUOAabz-z675u9k1OJVdotmem4f_5Z5EopEYUBuliJA-kSs1-4_QM&usqp=CAU" />
+              </div>
+            </div>
+            <button className='italic text-sky-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+          </div>
+          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-sky-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
+            <h3 className='text-lg italic font-medium text-center -mt-8 text-sky-900 '>Latest offres <span className='text-gray-700 ml-1 font-normal'> on mobiles</span></h3>
+            <div className='flex flex-wrap justify-evenly items-center mt-1'>
+              <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover px-3' src="https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2022/04/New-year-new-phone-Top-5-smartphones-to-launch-in-2022-scaled.jpg?fit=2560%2C1440&ssl=1" />
+              </div>
+              <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4N9vIxoszRBZ_fflldUlNqQF1Ku9gm5tIYI9t4GvQF6H2VMvwWnderBfedgSWh_SsQ8A&usqp=CAU" />
+              </div>
+              <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOLDyXuo8K6qE37MWjA7js2Y7GeCaqCcnhpAMs1_zVzozuKwqqG2VsmnjcD0qJwZC-hW0&usqp=CAU" />
+              </div>
+              <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHvSivH4723K8DnwhhE2vmAdKDJXQ6v2i-8Jxih9Vnv9xqf26crWzfpisYiDrZyj5Tq00&usqp=CAU" />
+              </div>
+            </div>
+            <button className='italic text-sky-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+          </div>
+          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-sky-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
+            <h3 className='text-lg italic font-medium text-center -mt-8 text-sky-900 '>Latest offers <span className='text-gray-700 ml-1 font-normal'> on accessories</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
+              <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover px-3' src="https://media1.popsugar-assets.com/files/thumbor/vOI8FoYo2FF2hDtuxfnopnpB8qs/0x133:1500x1784/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2022/01/05/832/n/1922564/72f3c13561d5ea7a9d47e0.47038613_/i/best-new-fashion-arrivals-january.jpg" />
+              </div>
+              <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover px-3' src="https://wp.missmalini.com/wp-content/uploads/2019/09/shutterstock_774362164.jpeg" />
+              </div>
+              <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover px-3' src="https://media.istockphoto.com/photos/womens-personal-accessories-picture-id638637448?k=20&m=638637448&s=612x612&w=0&h=GCSPbj7dhFYuQrkw4ApH6Z54ftKkqS_IuiZVKZM6xa0=" />
+              </div>
+              <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover px-3' src="https://media.gettyimages.com/photos/fashionable-clothing-with-personal-accesories-picture-id1202485255?s=612x612" />
+              </div>
+            </div>
+            <button className='italic text-sky-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+          </div>
+          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-sky-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-sky-900 '>Latest offers <span className='text-gray-700 ml-1 font-normal'> on jeans</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
+            <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeGZfOWmyROU5tyosmXYfnLoyhmzAS42gLtQ&usqp=CAU" />
+            </div>
+            <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy5laj5XvYTTr6CvYitVgvjbmXC2_BPTwgwg&usqp=CAU" />
+            </div>
+            <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLoy0tRQDJU0gweeDSARqxG01r11mTZxLIMw&usqp=CAU" />
+            </div>
+            <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN-fJQbNGhL_kxTirVKLEOtyiZshEwDhYn9Q&usqp=CAU" />
+            </div>
+          </div>
+            <button className='italic text-sky-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+          </div>
+          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-sky-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-sky-900 '>Latest offers <span className='text-gray-700 ml-1 font-normal'> on jackets</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
+            <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn7dWcWJ4DJHMHAb-kuTgVIOrVcmVugDzd6g&usqp=CAU" />
+            </div>
+            <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover px-3' src="https://m.media-amazon.com/images/I/61VMmNVYdxL._UL1142_.jpg" />
+            </div>
+            <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOPrgABIqqG06la9ISFGGRDOZtZ_6V_uf8PkZGSfBTnnc9pJ87rJmGwh9UHOQF14FHWFA&usqp=CAU" />
+            </div>
+            <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWdig6WJ845Z_P7Oa3HwAyoASGgB8Tj1c4bg&usqp=CAU" />
+            </div>
+          </div>
+            <button className='italic text-sky-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+          </div>
+          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-sky-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-sky-900 '>Latest offers <span className='text-gray-700 ml-1 font-normal'> on skin products</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
+            <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover px-3' src="https://www.nykaa.com/beauty-blog/wp-content/uploads/images/issue286/EVERYTHING-YOU-NEED-TO-KNOW-ABOUT-LANEIGES-NEW-SKINCARE-SQUAD_OI.jpg" />
+            </div>
+            <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover px-3' src="http://www.raincouverbeauty.com/wp-content/uploads/2020/05/Best-Laneige-Products.jpg" />
+            </div>
+            <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover px-3' src="https://1.bp.blogspot.com/-owWVT9Vi0Dc/YNbBMSaKkmI/AAAAAAAA_w4/oRPD6ahOeXgaXV4pxiZklpoFp6cl9h2nACLcBGAsYHQ/s800/LANEIGE%2BSKINCARE.jpg" />
+            </div>
+            <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX8zUmqET_sVyfF4MQiFsTDJDA8nVKUhkH4tt4t7UukiYj5NUx-49cBmJscIHlq09-18o&usqp=CAU" />
+            </div>
+          </div>
+            <button className='italic text-sky-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+          </div>
+        </div>
         </div>
       </section>
       {/* refurbrished section */}
-      <section className='bg-violet-200 w-full py-10 px-4'>
+      <section className='bg-violet-200 w-full py-10 px-4 md:px-6 lg:px-8 my-2 md:my-0'>
         <h2 className='text-2xl lg:text-3xl font-medium text-violet-900 italic mb-2 md:mb-4 ml-4 md:ml-6 lg:ml-8 text-center md:text-start'>Explore <span className='ml-1 md:ml-2 text-lg text-slate-700'>new refurbrished collection</span></h2>
-        <div className='h-96 bg-indigo-50 rounded flex justify-center'>
-
+        <div className='bg-violet-50 rounded flex justify-center'>
+        <div className='bg-violet-100 rounded flex justify-evenly py-4 md:py-6 space-y-10 flex-wrap'>
+          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-violet-100 mx-4 mt-8 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
+            <h3 className='text-lg italic font-medium text-center -mt-8 text-violet-900 '>Refurbrished<span className='text-gray-700 ml-1 font-normal'>laptops</span></h3>
+            <div className='flex flex-wrap justify-evenly items-center mt-1'>
+              <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover px-3' src="https://gpcdn.ams3.cdn.digitaloceanspaces.com/deals/dell-30000-laptopsasasssssssssssss.jpg" />
+              </div>
+              <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwyIEHH7SiJj5AgBztmtVn3TTK28NXvC5wv7NisSE2-tSg4KUcPYjXvATm156t9gGmYrI&usqp=CAU" />
+              </div>
+              <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr70aT6f_OTNlU4HDKSsSZYUoq2OeRYYtaWzxp_Gt4VkJSWA63MHCU-rl-kkWEO0Kihik&usqp=CAU" />
+              </div>
+              <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1EHECfC3ShQ2wolbvbEzAMYXHEz_4WqqZKSvj_R04mlfVlTSe5vGSCRi8YouYBCCdBVU&usqp=CAU" />
+              </div>
+            </div>
+            <button className='italic text-violet-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+          </div>
+          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-violet-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
+            <h3 className='text-lg italic font-medium text-center -mt-8 text-violet-900 '>Refurbrished<span className='text-gray-700 ml-1 font-normal'>mobiles</span></h3>
+            <div className='flex flex-wrap justify-evenly items-center mt-1'>
+              <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover px-3' src="https://m.media-amazon.com/images/I/31nHyRWhENL._SX385_.jpg" />
+              </div>
+              <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLAsI7IYXWF1PEOSpubKDcXk_LaXzVrpYJan-FhxsCH9fzp78wi6cRJp1feuKkkOtazTA&usqp=CAU" />
+              </div>
+              <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnqp2YVAQ0kG7U8pBFK2kWB9Ir5p4eC0CrIQ&usqp=CAU" />
+              </div>
+              <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzHQNNH2yc6aDXcpXeg2ADEY8h8vVpVIeJ0A&usqp=CAU" />
+              </div>
+            </div>
+            <button className='italic text-violet-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+          </div>
+          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-violet-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
+            <h3 className='text-lg italic font-medium text-center -mt-8 text-violet-900 '>Refurbrished<span className='text-gray-700 ml-1 font-normal'> electronics</span></h3>        
+            <div className='flex flex-wrap justify-evenly items-center mt-1'>
+              <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover px-3' src="https://cdn3.volusion.com/5rpy4.fuv9y/v/vspfiles/photos/YPC-X950DHE-MFP-LEXMARK-2.jpg?v-cache=1472056148" />
+              </div>
+              <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFVU4ETZR_ZcXjRWUlmadmpDAAXaj6Mox5pg&usqp=CAU" />
+              </div>
+              <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover px-3' src="https://apollo-singapore.akamaized.net/v1/files/g03gbm2igocm1-IN/image;s=850x0" />
+              </div>
+              <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
+                <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzAK0yIlgFFnbz5S7wsvSkEQF0VgMK7Id17g&usqp=CAU" />
+              </div>
+            </div>
+            <button className='italic text-violet-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+          </div>
+          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-violet-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-violet-900 '>Refurbrished<span className='text-gray-700 ml-1 font-normal'> accessories</span></h3>       
+           <div className='flex flex-wrap justify-evenly items-center mt-1'>
+            <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover px-3' src="https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBBTK-TRADE-WITARU728773DF0C753E/1593422454928_0..png" />
+            </div>
+            <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover px-3' src="https://www.hardware-corner.net/wp-content/uploads/2020/04/refurbished-dell-tb16-thunderbolt-dock-300x175.jpg" />
+            </div>
+            <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover px-3' src="https://cdn11.bigcommerce.com/s-5f4awa65w5/images/stencil/300x300/products/1146/4474/refurbished_airpods_max__06300.1652736403.jpg?c=1" />
+            </div>
+            <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover px-3' src="https://vestadeal.com/wp-content/uploads/2022/01/2000-300x300.jpg" />
+            </div>
+          </div>
+            <button className='italic text-violet-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+          </div>
+          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-violet-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-violet-900 '>Refurbrished <span className='text-gray-700 ml-1 font-normal'> air conditioners</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
+            <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover px-3' src="https://apollo-singapore.akamaized.net/v1/files/23zjgnozrcq62-IN/image;s=850x0" />
+            </div>
+            <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover px-3' src="https://5.imimg.com/data5/SELLER/Default/2021/10/CJ/NR/QH/123645975/img-20210221-120059-250x250.jpg" />
+            </div>
+            <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover px-3' src="https://m.media-amazon.com/images/I/416gyIWUJpL._SX679_.jpg" />
+            </div>
+            <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover px-3' src="https://ik.imagekit.io/tudqzcdvr/tr:h-600,w-600,ot-Rentpelelo,otc-808080/rentpelelo_Career-refurbished-split-AC-on-rent-in-Navi-Mumbai-area_split-AC-on-rent-RentPeLelo.jpg?ik-sdk-version=php-1.2.2" />
+            </div>
+          </div>
+            <button className='italic text-violet-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+          </div>
+          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-violet-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-violet-900 '>Refurbrished<span className='text-gray-700 ml-1 font-normal'> on skin products</span></h3>       
+           <div className='flex flex-wrap justify-evenly items-center mt-1'>
+            <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover px-3' src="https://image.coolblue.nl/transparent/max/212x170/products/1638864" />
+            </div>
+            <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXSVBKWwubWzmgOcEm7QlTco5hX8iHIVPIkg&usqp=CAU" />
+            </div>
+            <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover px-3' src="https://apollo-singapore.akamaized.net/v1/files/06dtp5q7i2ea1-IN/image;s=850x0" />
+            </div>
+            <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
+              <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXyCK_9kmdGJ7nf6g1kPfB9lRT5osg4WHq_Q&usqp=CAU" />
+            </div>
+          </div>
+            <button className='italic text-violet-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+          </div>
+        </div>
         </div>
       </section>
 
