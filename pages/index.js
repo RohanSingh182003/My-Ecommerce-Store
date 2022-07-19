@@ -26,7 +26,7 @@ export default function Home() {
       {/* crousal starts here */}
 
       <Slider {...settings} className="-z-10">
-        {CarouselData.map( ( item, index ) => { return <div key={index}><img src={item.image} /></div> } )}
+        {CarouselData.map( ( item, index ) => { return <div key={index}><img className='h-96' src={item.image} /></div> } )}
       </Slider>
 
       {/* Catagory section starts here */}
