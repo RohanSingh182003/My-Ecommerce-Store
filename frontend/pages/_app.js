@@ -6,7 +6,7 @@ import SemiNavbar from '../components/SemiNavbar'
 
 function MyApp( { Component, pageProps } ) {
   return ( <>
-    <NextNProgress
+     <NextNProgress
       color="#0f7a4c"
       startPosition={0.3}
       stopDelayMs={200}

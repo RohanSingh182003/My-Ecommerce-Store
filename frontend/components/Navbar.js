@@ -59,8 +59,8 @@ const Navbar = () => {
                 variants={dropdownVariant}
                 initial="hidden"
                 animate="visible"
-                onMouseOver={() => { setDropdown( true ) }} onMouseOut={() => { setDropdown( false ) }} className='bg-green-50 w-fit rounded-md border absolute right-5 lg:top-9 lg:right-48 p-4 z-20'>
-                <ul className='space-y-2 z-20'>
+                onMouseOver={() => { setDropdown( true ) }} onMouseOut={() => { setDropdown( false ) }} className='bg-green-50 w-fit rounded-md border absolute right-5 lg:top-9 lg:right-48 p-4 z-40'>
+                <ul className='space-y-2 z-40'>
                   <Link href={'/'}><motion.li variants={dropdownChild} whileHover="hover" initial="hidden" whileTap="tap" className='cursor-pointer text-slate-700'>24x7 Support</motion.li></Link>
                   <Link href={'/'}><motion.li variants={dropdownChild} whileHover="hover" initial="hidden" whileTap="tap" className='cursor-pointer text-slate-700'>Report bug</motion.li></Link>
                 </ul>

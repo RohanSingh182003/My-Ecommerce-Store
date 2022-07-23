@@ -5,6 +5,7 @@ import { CarouselData } from '../components/ImageData';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import {motion} from "framer-motion"
 
 export default function Home() {
   const settings = {
@@ -15,7 +16,123 @@ export default function Home() {
     autoplay: true,
     autoplaySpeed: 5000,
     pauseOnHover: true
-  };
+  }
+  const renderPage = {
+    hidden:{
+      opacity: 0,
+      x: "100%"
+    },
+    visible:{
+      opacity: 1,
+      x: 0,
+      transition:{
+        delay: 0.1,
+        duration: 0.3,
+        type: 'spring',
+        stiffness: 70
+      }
+    },
+    exit:{
+      opacity: 0,
+      x: "-100%",
+      transition:{
+        delay: 0.1,
+        duration: 0.2
+      }
+    }
+  }
+  const primaryHeading = {
+    hidden:{
+      opacity: 0,
+      x: "100%"
+    },
+    visible:{
+      opacity: 1,
+      x: 0,
+      transition:{
+        delay: 0.2,
+        duration: 0.3,
+        type: 'spring',
+        stiffness: 100
+      }
+    }
+  }
+  const primaryTitle = {
+    hidden:{
+      opacity: 0,
+      x: "100%"
+    },
+    visible:{
+      opacity: 1,
+      x: 0,
+      transition:{
+        delay: 0.5,
+        duration: 0.4,
+        type: 'spring',
+        stiffness: 110
+      }
+    }
+  }
+  const primarySubTitle = {
+    hidden:{
+      opacity: 0,
+      x: "100%"
+    },
+    visible:{
+      opacity: 1,
+      x: 0,
+      transition:{
+        duration: 0.4,
+        type: 'spring',
+        stiffness: 130
+      }
+    }
+  }
+  const SubTitle = {
+    hidden:{
+      opacity: 0,
+      x: "100%"
+    },
+    visible:{
+      opacity: 1,
+      x: 0,
+      transition:{
+        delay:0.1,
+        duration: 0.6,
+        type: 'spring',
+        stiffness: 100
+      }
+    }
+  }
+  const primartContainer = {
+    hidden:{
+      opacity: 0,
+      y: -40
+    },
+    visible:{
+      opacity: 1,
+      y: 0,
+      transition:{
+        duration: 0.5,
+        when: "beforeChildren",
+        staggerChildren: 0.5
+      }
+    }
+  }
+  const childContainer ={
+    hidden:{
+      opacity: 0,
+      y: -60
+    },
+    visible:{
+      opacity: 1,
+      y: 0,
+      transition:{
+        duration: 0.3,
+        when: "afterChildren"
+      }
+    }
+  }
   return (
     <>
       <Head>
@@ -25,7 +142,8 @@ export default function Home() {
       </Head>
       {/* crousal starts here */}
 
-      <Slider {...settings} className="-z-10">
+      <Slider
+       className="-z-50">
         {CarouselData.map( ( item, index ) => { return <div key={index}><img className='h-96' src={item.image} /></div> } )}
       </Slider>
 
@@ -34,12 +152,29 @@ export default function Home() {
         <div className="container px-5 pt-8 md:p-12 mx-auto">
           <div className="flex flex-col text-center w-full mb-4">
             {/* primary heading */}
-            <h1 className="sm:text-3xl text-2xl lg:text-4xl font-semibold title-font mb-4 text-green-900">Welcome to our Ecommerce Store</h1>
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-base hidden md:block">My Ecommerce store is Proudly Make in India.Here we have Extra discount for the india customers, because we believe that its our duty to deliver quality products for every Indian at low price.</p>
+            <motion.h1 
+            variants={primaryHeading} 
+            initial="hidden"
+             whileInView="visible" 
+             className="sm:text-3xl text-2xl lg:text-4xl font-semibold title-font mb-4 text-green-900">Welcome to our Ecommerce Store</motion.h1>
+            <motion.p
+            variants={primaryTitle} 
+            initial="hidden"
+             whileInView="visible" 
+            className="lg:w-2/3 mx-auto leading-relaxed text-base hidden md:block">My Ecommerce store is Proudly Make in India.Here we have Extra discount for the india customers, because we believe that its our duty to deliver quality products for every Indian at low price.</motion.p>
             {/* heading of collections */}
-            <h2 className='text-2xl lg:text-3xl font-medium text-green-900 italic md:my-8'>Explore <span className='ml-1 md:ml-2 text-lg text-slate-700'>all catagories</span></h2>
+            <motion.h2
+              variants={primarySubTitle} 
+              initial="hidden"
+               whileInView="visible" 
+            className='text-2xl lg:text-3xl font-medium text-green-900 italic md:my-8'>Explore <span className='ml-1 md:ml-2 text-lg text-slate-700'>all catagories</span></motion.h2>
           </div>
-          <div className="flex flex-wrap -m-4 justify-center">
+          {/* all  catagories section */}
+          <motion.div
+          variants={primartContainer}
+          initial="hidden"
+          whileInView="visible"
+          className="flex flex-wrap -m-4 justify-center">
             <div className="lg:w-1/3 w-1/2 p-4 overflow-hidden">
               <div className="flex relative cursor-pointer">
                 <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8bGFwdG9wfHx8fHx8MTY1ODAyODEzMg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" />
@@ -100,14 +235,24 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
       {/* newly launch products section */}
-      <section className='bg-indigo-200 w-full py-10 px-4 md:px-6 lg:px-8 my-2 md:my-0'>
-        <h2 className='text-2xl lg:text-3xl font-medium text-indigo-900 italic mb-2 md:mb-4 ml-4 md:ml-6 lg:ml-8 text-center md:text-start'>Explore <span className='ml-1 md:ml-2 text-lg text-slate-700'>newly launched products</span></h2>
+      <motion.section
+       variants={primartContainer}
+       initial="hidden"
+       whileInView="visible"
+      className='bg-indigo-200 w-full py-10 px-4 md:px-6 lg:px-8 my-2 md:my-0'>
+        <motion.h2
+          variants={SubTitle} 
+          initial="hidden"
+           whileInView="visible" 
+        className='text-2xl lg:text-3xl font-medium text-indigo-900 italic mb-2 md:mb-4 ml-4 md:ml-6 lg:ml-8 text-center md:text-start'>Explore <span className='ml-1 md:ml-2 text-lg text-slate-700'>newly launched products</span></motion.h2>
         <div className='bg-indigo-100 rounded flex justify-evenly py-4 md:py-6 space-y-10 flex-wrap'>
-          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-indigo-100 mx-4 mt-8 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
+          <motion.div
+          variants={childContainer}
+          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-indigo-100 mx-4 mt-8 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
             <h3 className='text-lg italic font-medium text-center -mt-8 text-indigo-900 '>Newly <span className='text-gray-700 ml-1 font-normal'> launched laptops</span></h3>
             <div className='flex flex-wrap justify-evenly items-center mt-1'>
               <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
@@ -124,8 +269,10 @@ export default function Home() {
               </div>
             </div>
             <button className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
-          </div>
-          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-indigo-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
+          </motion.div>
+          <motion.div 
+          variants={childContainer}
+          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-indigo-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
             <h3 className='text-lg italic font-medium text-center -mt-8 text-indigo-900 '>Newly <span className='text-gray-700 ml-1 font-normal'> launched mobiles</span></h3>
             <div className='flex flex-wrap justify-evenly items-center mt-1'>
               <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
@@ -142,8 +289,10 @@ export default function Home() {
               </div>
             </div>
             <button className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
-          </div>
-          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-indigo-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
+          </motion.div>
+          <motion.div 
+          variants={childContainer}
+          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-indigo-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
             <h3 className='text-lg italic font-medium text-center -mt-8 text-indigo-900 '>Newly <span className='text-gray-700 ml-1 font-normal'> launched accessories</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
               <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
                 <img className='object-cover px-3' src="https://images.unsplash.com/photo-1608539733292-190446b22b83?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8YWNjZXNzb3JpZXN8fHx8fHwxNjU4MTU4MjE0&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
@@ -159,8 +308,10 @@ export default function Home() {
               </div>
             </div>
             <button className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
-          </div>
-          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-indigo-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-indigo-900 '>Newly <span className='text-gray-700 ml-1 font-normal'> launched jeans</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
+          </motion.div>
+          <motion.div
+          variants={childContainer}
+          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-indigo-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-indigo-900 '>Newly <span className='text-gray-700 ml-1 font-normal'> launched jeans</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
             <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
               <img className='object-cover px-3' src="https://images.unsplash.com/photo-1622225921810-f25552775318?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8amVhbnN8fHx8fHwxNjU4MTU4NDc0&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
             </div>
@@ -175,8 +326,10 @@ export default function Home() {
             </div>
           </div>
             <button className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
-          </div>
-          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-indigo-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-indigo-900 '>Newly <span className='text-gray-700 ml-1 font-normal'> launched jackets</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
+          </motion.div>
+          <motion.div 
+          variants={childContainer}
+          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-indigo-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-indigo-900 '>Newly <span className='text-gray-700 ml-1 font-normal'> launched jackets</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
             <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
               <img className='object-cover px-3' src="https://images.unsplash.com/photo-1585075411755-9338ea8b4c66?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8amFja2V0fHx8fHx8MTY1ODE2MDMwNA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
             </div>
@@ -191,8 +344,10 @@ export default function Home() {
             </div>
           </div>
             <button className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
-          </div>
-          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-indigo-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-indigo-900 '>Newly <span className='text-gray-700 ml-1 font-normal'> launched skin products</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
+          </motion.div>
+          <motion.div 
+          variants={childContainer}
+          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-indigo-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-indigo-900 '>Newly <span className='text-gray-700 ml-1 font-normal'> launched skin products</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
             <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
               <img className='object-cover px-3' src="https://media.istockphoto.com/photos/nude-eyeshadow-palette-and-makeup-artists-tools-on-a-marble-vanity-picture-id1370468785?b=1&k=20&m=1370468785&s=170667a&w=0&h=N194rFK8f58gVbr9PkjMsTAJuLZ2CkQwwSYFvNDEybo=" />
             </div>
@@ -207,15 +362,25 @@ export default function Home() {
             </div>
           </div>
             <button className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
-          </div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
       {/* offers section */}
-      <section className='bg-sky-200 w-full py-10 px-4 md:px-6 lg:px-8 my-2 md:my-0'>
-        <h2 className='text-2xl lg:text-3xl font-medium text-sky-900 italic mb-2 md:mb-4 ml-4 md:ml-6 lg:ml-8 text-center md:text-start'>Explore <span className='ml-1 md:ml-2 text-lg text-slate-700'>latest offers</span></h2>
+      <motion.section
+      variants={primartContainer}
+      initial="hidden"
+      whileInView="visible"
+      className='bg-sky-200 w-full py-10 px-4 md:px-6 lg:px-8 my-2 md:my-0'>
+        <motion.h2
+         variants={SubTitle} 
+         initial="hidden"
+          whileInView="visible" 
+        className='text-2xl lg:text-3xl font-medium text-sky-900 italic mb-2 md:mb-4 ml-4 md:ml-6 lg:ml-8 text-center md:text-start'>Explore <span className='ml-1 md:ml-2 text-lg text-slate-700'>latest offers</span></motion.h2>
         <div className='bg-sky-50 rounded flex justify-center'>
         <div className='bg-sky-100 rounded flex justify-evenly py-4 md:py-6 space-y-10 flex-wrap'>
-          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-sky-100 mx-4 mt-8 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
+          <motion.div 
+          variants={childContainer}
+          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-sky-100 mx-4 mt-8 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
             <h3 className='text-lg italic font-medium text-center -mt-8 text-sky-900 '>Latest offers <span className='text-gray-700 ml-1 font-normal'> on laptops</span></h3>
             <div className='flex flex-wrap justify-evenly items-center mt-1'>
               <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
@@ -232,8 +397,10 @@ export default function Home() {
               </div>
             </div>
             <button className='italic text-sky-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
-          </div>
-          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-sky-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
+          </motion.div>
+          <motion.div
+          variants={childContainer}
+          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-sky-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
             <h3 className='text-lg italic font-medium text-center -mt-8 text-sky-900 '>Latest offres <span className='text-gray-700 ml-1 font-normal'> on mobiles</span></h3>
             <div className='flex flex-wrap justify-evenly items-center mt-1'>
               <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
@@ -250,8 +417,10 @@ export default function Home() {
               </div>
             </div>
             <button className='italic text-sky-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
-          </div>
-          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-sky-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
+          </motion.div>
+          <motion.div 
+          variants={childContainer}
+          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-sky-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
             <h3 className='text-lg italic font-medium text-center -mt-8 text-sky-900 '>Latest offers <span className='text-gray-700 ml-1 font-normal'> on accessories</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
               <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
                 <img className='object-cover px-3' src="https://media1.popsugar-assets.com/files/thumbor/vOI8FoYo2FF2hDtuxfnopnpB8qs/0x133:1500x1784/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2022/01/05/832/n/1922564/72f3c13561d5ea7a9d47e0.47038613_/i/best-new-fashion-arrivals-january.jpg" />
@@ -267,8 +436,10 @@ export default function Home() {
               </div>
             </div>
             <button className='italic text-sky-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
-          </div>
-          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-sky-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-sky-900 '>Latest offers <span className='text-gray-700 ml-1 font-normal'> on jeans</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
+          </motion.div>
+          <motion.div
+          variants={childContainer}
+          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-sky-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-sky-900 '>Latest offers <span className='text-gray-700 ml-1 font-normal'> on jeans</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
             <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
               <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeGZfOWmyROU5tyosmXYfnLoyhmzAS42gLtQ&usqp=CAU" />
             </div>
@@ -283,8 +454,10 @@ export default function Home() {
             </div>
           </div>
             <button className='italic text-sky-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
-          </div>
-          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-sky-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-sky-900 '>Latest offers <span className='text-gray-700 ml-1 font-normal'> on jackets</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
+          </motion.div>
+          <motion.div
+          variants={childContainer}
+          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-sky-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-sky-900 '>Latest offers <span className='text-gray-700 ml-1 font-normal'> on jackets</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
             <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
               <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn7dWcWJ4DJHMHAb-kuTgVIOrVcmVugDzd6g&usqp=CAU" />
             </div>
@@ -299,8 +472,10 @@ export default function Home() {
             </div>
           </div>
             <button className='italic text-sky-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
-          </div>
-          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-sky-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-sky-900 '>Latest offers <span className='text-gray-700 ml-1 font-normal'> on skin products</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
+          </motion.div>
+          <motion.div
+          variants={childContainer}
+          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-sky-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-sky-900 '>Latest offers <span className='text-gray-700 ml-1 font-normal'> on skin products</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
             <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
               <img className='object-cover px-3' src="https://www.nykaa.com/beauty-blog/wp-content/uploads/images/issue286/EVERYTHING-YOU-NEED-TO-KNOW-ABOUT-LANEIGES-NEW-SKINCARE-SQUAD_OI.jpg" />
             </div>
@@ -315,16 +490,26 @@ export default function Home() {
             </div>
           </div>
             <button className='italic text-sky-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
-          </div>
+          </motion.div>
         </div>
         </div>
-      </section>
+      </motion.section>
       {/* refurbrished section */}
-      <section className='bg-violet-200 w-full py-10 px-4 md:px-6 lg:px-8 my-2 md:my-0'>
-        <h2 className='text-2xl lg:text-3xl font-medium text-violet-900 italic mb-2 md:mb-4 ml-4 md:ml-6 lg:ml-8 text-center md:text-start'>Explore <span className='ml-1 md:ml-2 text-lg text-slate-700'>new refurbrished collection</span></h2>
+      <motion.section
+       variants={primartContainer}
+       initial="hidden"
+       whileInView="visible"
+      className='bg-violet-200 w-full py-10 px-4 md:px-6 lg:px-8 my-2 md:my-0'>
+        <motion.h2
+         variants={SubTitle} 
+         initial="hidden"
+          whileInView="visible" 
+        className='text-2xl lg:text-3xl font-medium text-violet-900 italic mb-2 md:mb-4 ml-4 md:ml-6 lg:ml-8 text-center md:text-start'>Explore <span className='ml-1 md:ml-2 text-lg text-slate-700'>new refurbrished collection</span></motion.h2>
         <div className='bg-violet-50 rounded flex justify-center'>
         <div className='bg-violet-100 rounded flex justify-evenly py-4 md:py-6 space-y-10 flex-wrap'>
-          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-violet-100 mx-4 mt-8 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
+          <motion.div
+          variants={childContainer}
+          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-violet-100 mx-4 mt-8 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
             <h3 className='text-lg italic font-medium text-center -mt-8 text-violet-900 '>Refurbrished<span className='text-gray-700 ml-1 font-normal'>laptops</span></h3>
             <div className='flex flex-wrap justify-evenly items-center mt-1'>
               <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
@@ -341,8 +526,10 @@ export default function Home() {
               </div>
             </div>
             <button className='italic text-violet-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
-          </div>
-          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-violet-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
+          </motion.div>
+          <motion.div 
+          variants={childContainer}
+          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-violet-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
             <h3 className='text-lg italic font-medium text-center -mt-8 text-violet-900 '>Refurbrished<span className='text-gray-700 ml-1 font-normal'>mobiles</span></h3>
             <div className='flex flex-wrap justify-evenly items-center mt-1'>
               <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
@@ -359,8 +546,10 @@ export default function Home() {
               </div>
             </div>
             <button className='italic text-violet-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
-          </div>
-          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-violet-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
+          </motion.div>
+          <motion.div
+          variants={childContainer}
+          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-violet-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
             <h3 className='text-lg italic font-medium text-center -mt-8 text-violet-900 '>Refurbrished<span className='text-gray-700 ml-1 font-normal'> electronics</span></h3>        
             <div className='flex flex-wrap justify-evenly items-center mt-1'>
               <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
@@ -377,8 +566,10 @@ export default function Home() {
               </div>
             </div>
             <button className='italic text-violet-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
-          </div>
-          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-violet-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-violet-900 '>Refurbrished<span className='text-gray-700 ml-1 font-normal'> accessories</span></h3>       
+          </motion.div>
+          <motion.div
+          variants={childContainer}
+          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-violet-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-violet-900 '>Refurbrished<span className='text-gray-700 ml-1 font-normal'> accessories</span></h3>       
            <div className='flex flex-wrap justify-evenly items-center mt-1'>
             <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
               <img className='object-cover px-3' src="https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBBTK-TRADE-WITARU728773DF0C753E/1593422454928_0..png" />
@@ -394,8 +585,10 @@ export default function Home() {
             </div>
           </div>
             <button className='italic text-violet-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
-          </div>
-          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-violet-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-violet-900 '>Refurbrished <span className='text-gray-700 ml-1 font-normal'> air conditioners</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
+          </motion.div>
+          <motion.div 
+          variants={childContainer}
+          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-violet-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-violet-900 '>Refurbrished <span className='text-gray-700 ml-1 font-normal'> air conditioners</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
             <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
               <img className='object-cover px-3' src="https://apollo-singapore.akamaized.net/v1/files/23zjgnozrcq62-IN/image;s=850x0" />
             </div>
@@ -410,8 +603,10 @@ export default function Home() {
             </div>
           </div>
             <button className='italic text-violet-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
-          </div>
-          <div className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-violet-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-violet-900 '>Refurbrished<span className='text-gray-700 ml-1 font-normal'> on skin products</span></h3>       
+          </motion.div>
+          <motion.div
+          variants={childContainer}
+          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-violet-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-violet-900 '>Refurbrished<span className='text-gray-700 ml-1 font-normal'> on skin products</span></h3>       
            <div className='flex flex-wrap justify-evenly items-center mt-1'>
             <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
               <img className='object-cover px-3' src="https://image.coolblue.nl/transparent/max/212x170/products/1638864" />
@@ -427,10 +622,10 @@ export default function Home() {
             </div>
           </div>
             <button className='italic text-violet-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
-          </div>
+          </motion.div>
         </div>
         </div>
-      </section>
+      </motion.section>
 
     </>
   )
