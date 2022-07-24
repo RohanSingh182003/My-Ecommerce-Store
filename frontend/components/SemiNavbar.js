@@ -20,12 +20,12 @@ const SemiNavbar = () => {
   }
   const dropdownChild = {
     hidden:{
-      y:-2
+      y:-20,
+      opacity: 0
     },
     hover: {
       scale: 1.1,
-      color: '#0d1a00',
-      y:0
+      color: '#0d1a00'
     },
     tap: {
       scale: 0.8
@@ -55,11 +55,11 @@ const SemiNavbar = () => {
             animate="visible"
             onMouseOver={() => { setDropdown( true ) }} onMouseOut={() => { setDropdown( false ) }} className='bg-green-50 p-4 absolute top-24 right-16 rounded-md border -mt-2 z-10'>
             <ul className='space-y-2'>
-              <Link href={'/'}><motion.li variants={dropdownChild} whileHover="hover" initial="hidden" whileTap="tap" className='cursor-pointer hover:text-gray-900 '>Accessories</motion.li></Link>
-              <Link href={'/'}><motion.li variants={dropdownChild} whileHover="hover" initial="hidden" whileTap="tap" className='cursor-pointer hover:text-gray-900 '>Latest Launch</motion.li></Link>
-              <Link href={'/'}><motion.li variants={dropdownChild} whileHover="hover" initial="hidden" whileTap="tap" className='cursor-pointer hover:text-gray-900 '>Skin products</motion.li></Link>
-              <Link href={'/'}><motion.li variants={dropdownChild} whileHover="hover" initial="hidden" whileTap="tap" className='cursor-pointer hover:text-gray-900 '>Refurbrished</motion.li></Link>
-              <Link href={'/'}><motion.li variants={dropdownChild} whileHover="hover" initial="hidden" whileTap="tap" className='cursor-pointer hover:text-gray-900 '>Toys & more</motion.li></Link>
+              <Link href={'/'}><motion.li variants={dropdownChild} whileHover="hover" whileTap="tap" className='cursor-pointer hover:text-gray-900 '>Accessories</motion.li></Link>
+              <Link href={'/'}><motion.li variants={dropdownChild} whileHover="hover" whileTap="tap" className='cursor-pointer hover:text-gray-900 '>Latest Launch</motion.li></Link>
+              <Link href={'/'}><motion.li variants={dropdownChild} whileHover="hover" whileTap="tap" className='cursor-pointer hover:text-gray-900 '>Skin products</motion.li></Link>
+              <Link href={'/'}><motion.li variants={dropdownChild} whileHover="hover" whileTap="tap" className='cursor-pointer hover:text-gray-900 '>Refurbrished</motion.li></Link>
+              <Link href={'/'}><motion.li variants={dropdownChild} whileHover="hover" whileTap="tap" className='cursor-pointer hover:text-gray-900 '>Toys & more</motion.li></Link>
             </ul>
           </motion.div>}
         </div>

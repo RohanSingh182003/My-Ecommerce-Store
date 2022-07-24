@@ -142,10 +142,16 @@ export default function Home() {
       </Head>
       {/* crousal starts here */}
 
+      <motion.div
+      variants={primartContainer}
+      initial="hidden"
+      whileInView="visible"
+      >
       <Slider {...settings}
        className="-z-50">
-        {CarouselData.map( ( item, index ) => { return <div key={index}><img className='lg:h-96 md:h-64 h-32' src={item.image} /></div> } )}
+        {CarouselData.map( ( item, index ) => { return <div key={index}><img className='lg:h-96 md:h-64 h-32 min-w-full' src={item.image} /></div> } )}
       </Slider>
+      </motion.div>
 
       {/* Catagory section starts here */}
       <section className="text-gray-600 body-font bg-green-100 -mt-2 pb-3">
@@ -175,7 +181,10 @@ export default function Home() {
           initial="hidden"
           whileInView="visible"
           className="flex flex-wrap -m-4 justify-center">
-            <div className="lg:w-1/3 w-1/2 p-4 overflow-hidden">
+            <motion.div 
+             whileHover={{ scale: 1.05 }}
+             whileTap={{ scale: 0.9 }} 
+            className="lg:w-1/3 w-1/2 p-4 overflow-hidden">
               <div className="flex relative cursor-pointer">
                 <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8bGFwdG9wfHx8fHx8MTY1ODAyODEzMg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" />
                 <div className="p-1 overflow-hidden text-center md:text-start md:px-8 md:py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-lime-50 opacity-0 hover:opacity-100 transition-opacity">
@@ -184,8 +193,11 @@ export default function Home() {
                   <p className="leading-relaxed">We have the best quality & newly launched electronic products at affordable price.</p>
                 </div>
               </div>
-            </div>
-            <div className="lg:w-1/3 w-1/2 p-4 overflow-hidden">
+            </motion.div>
+            <motion.div 
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.9 }} 
+            className="lg:w-1/3 w-1/2 p-4 overflow-hidden">
               <div className="flex relative cursor-pointer">
                 <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://images.unsplash.com/photo-1625204614387-6509254d5b02?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFzaGlvbnx8fHx8fDE2NTgwMjg0NTQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" />
                 <div className="p-1 overflow-hidden text-center md:text-start md:px-8 md:py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-lime-50 opacity-0 hover:opacity-100 transition-opacity">
@@ -194,8 +206,11 @@ export default function Home() {
                   <p className="leading-relaxed">We have the best quality fashion wear for Men, Women, Kids at affordable price.</p>
                 </div>
               </div>
-            </div>
-            <div className="lg:w-1/3 w-1/2 p-4 overflow-hidden">
+            </motion.div>
+            <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.9 }} 
+            className="lg:w-1/3 w-1/2 p-4 overflow-hidden">
               <div className="flex relative cursor-pointer">
                 <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://images.unsplash.com/photo-1556910633-5099dc3971e8?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8YXBwbGlhbmNlc3x8fHx8fDE2NTgwMjg1MTM&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" />
                 <div className="p-1 overflow-hidden text-center md:text-start md:px-8 md:py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-lime-50 opacity-0 hover:opacity-100 transition-opacity">
@@ -204,8 +219,11 @@ export default function Home() {
                   <p className="leading-relaxed">We have the best quality Home, Office & other useful appliances at low price.</p>
                 </div>
               </div>
-            </div>
-            <div className="lg:w-1/3 w-1/2 p-4 overflow-hidden">
+            </motion.div>
+            <motion.div 
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.9 }} 
+            className="lg:w-1/3 w-1/2 p-4 overflow-hidden">
               <div className="flex relative cursor-pointer">
                 <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://images.unsplash.com/photo-1444459094717-a39f1e3e0903?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8ZnJ1aXRzfHx8fHx8MTY1ODAyODU1Ng&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" />
                 <div className="p-1 overflow-hidden text-center md:text-start md:px-8 md:py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-lime-50 opacity-0 hover:opacity-100 transition-opacity">
@@ -214,8 +232,11 @@ export default function Home() {
                   <p className="leading-relaxed">Get fresh grocerry in market price at your door steps.</p>
                 </div>
               </div>
-            </div>
-            <div className="lg:w-1/3 w-1/2 p-4 overflow-hidden hidden sm:block">
+            </motion.div>
+            <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.9 }} 
+            className="lg:w-1/3 w-1/2 p-4 overflow-hidden hidden sm:block">
               <div className="flex relative cursor-pointer">
                 <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://images.unsplash.com/photo-1564974944361-f22154173317?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmxpZ2h0fHx8fHx8MTY1ODAyODU5OQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" />
                 <div className="px-8 py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-lime-50 opacity-0 hover:opacity-100 transition-opacity">
@@ -224,8 +245,11 @@ export default function Home() {
                   <p className="leading-relaxed">Book your holiday with us all over the world now.</p>
                 </div>
               </div>
-            </div>
-            <div className="lg:w-1/3 w-1/2 p-4 overflow-hidden hidden sm:block">
+            </motion.div>
+            <motion.div 
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.9 }} 
+            className="lg:w-1/3 w-1/2 p-4 overflow-hidden hidden sm:block">
               <div className="flex relative cursor-pointer">
                 <img alt="gallery" className="absolute inset-0 w-full h-64 object-cover object-center" src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8dG95c3x8fHx8fDE2NTgwMjg2Mzc&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=400" />
                 <div className="px-8 py-10 relative z-10 w-full border-4 h-64 border-gray-200 bg-lime-50 opacity-0 hover:opacity-100 transition-opacity">
@@ -234,7 +258,7 @@ export default function Home() {
                   <p className="leading-relaxed">Get new generation toys for your new generation kids at affordable price.</p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </motion.div>
         </div>
       </section>
@@ -252,7 +276,7 @@ export default function Home() {
         <div className='bg-indigo-100 rounded flex justify-evenly py-4 md:py-6 space-y-10 flex-wrap'>
           <motion.div
           variants={childContainer}
-          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-indigo-100 mx-4 mt-8 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
+          className='w-60 md:w-5/12 lg:w-3/12 h-64 bg-indigo-100 mx-4 mt-8 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
             <h3 className='text-lg italic font-medium text-center -mt-8 text-indigo-900 '>Newly <span className='text-gray-700 ml-1 font-normal'> launched laptops</span></h3>
             <div className='flex flex-wrap justify-evenly items-center mt-1'>
               <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
@@ -268,11 +292,14 @@ export default function Home() {
                 <img className='object-cover px-3' src="https://images.unsplash.com/photo-1485988412941-77a35537dae4?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8bGFwdG9wfHx8fHx8MTY1ODE1NzExNQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
               </div>
             </div>
-            <button className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+            <motion.button
+             whileHover={{ scale: 1.2 }}
+             whileTap={{ scale: 0.8 }} 
+            className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 md:ml-52 ml-36'>Explore all</motion.button>
           </motion.div>
           <motion.div 
           variants={childContainer}
-          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-indigo-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
+          className='w-60 md:w-5/12 lg:w-3/12 h-64 bg-indigo-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
             <h3 className='text-lg italic font-medium text-center -mt-8 text-indigo-900 '>Newly <span className='text-gray-700 ml-1 font-normal'> launched mobiles</span></h3>
             <div className='flex flex-wrap justify-evenly items-center mt-1'>
               <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
@@ -288,11 +315,14 @@ export default function Home() {
                 <img className='object-cover px-3' src="https://images.unsplash.com/photo-1549921296-3b0f9a35af35?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8bW9iaWxlfHx8fHx8MTY1ODE1ODEwMw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
               </div>
             </div>
-            <button className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+            <motion.button
+             whileHover={{ scale: 1.2 }}
+             whileTap={{ scale: 0.8 }} 
+            className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 md:ml-52 ml-36'>Explore all</motion.button>
           </motion.div>
           <motion.div 
           variants={childContainer}
-          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-indigo-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
+          className='w-60 md:w-5/12 lg:w-3/12 h-64 bg-indigo-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
             <h3 className='text-lg italic font-medium text-center -mt-8 text-indigo-900 '>Newly <span className='text-gray-700 ml-1 font-normal'> launched accessories</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
               <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
                 <img className='object-cover px-3' src="https://images.unsplash.com/photo-1608539733292-190446b22b83?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8YWNjZXNzb3JpZXN8fHx8fHwxNjU4MTU4MjE0&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
@@ -307,11 +337,14 @@ export default function Home() {
                 <img className='object-cover px-3' src="https://images.unsplash.com/photo-1578254869543-b100332e3132?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8YWNjZXNzb3JpZXN8fHx8fHwxNjU4MTU4MzYw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
               </div>
             </div>
-            <button className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+            <motion.button 
+             whileHover={{ scale: 1.2 }}
+             whileTap={{ scale: 0.8 }} 
+            className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 md:ml-52 ml-36'>Explore all</motion.button>
           </motion.div>
           <motion.div
           variants={childContainer}
-          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-indigo-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-indigo-900 '>Newly <span className='text-gray-700 ml-1 font-normal'> launched jeans</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
+          className='w-60 md:w-5/12 lg:w-3/12 h-64 bg-indigo-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-indigo-900 '>Newly <span className='text-gray-700 ml-1 font-normal'> launched jeans</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
             <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
               <img className='object-cover px-3' src="https://images.unsplash.com/photo-1622225921810-f25552775318?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8amVhbnN8fHx8fHwxNjU4MTU4NDc0&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
             </div>
@@ -325,11 +358,15 @@ export default function Home() {
               <img className='object-cover px-3' src="https://images.unsplash.com/photo-1520517238863-2a437c6b1b08?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8amVhbnN8fHx8fHwxNjU4MTU4NTY0&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
             </div>
           </div>
-            <button className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+            <motion.button 
+             whileHover={{ scale: 1.2 }}
+             whileTap={{ scale: 0.8 }} 
+            className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 md:ml-52 ml-36'>Explore all</motion.button>
           </motion.div>
           <motion.div 
           variants={childContainer}
-          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-indigo-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-indigo-900 '>Newly <span className='text-gray-700 ml-1 font-normal'> launched jackets</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
+          className='w-60 md:w-5/12 lg:w-3/12 h-64 bg-indigo-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-indigo-900 '>Newly <span className='text-gray-700 ml-1 font-normal'> launched jackets</span></h3>        
+          <div className='flex flex-wrap justify-evenly items-center mt-1'>
             <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
               <img className='object-cover px-3' src="https://images.unsplash.com/photo-1585075411755-9338ea8b4c66?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8amFja2V0fHx8fHx8MTY1ODE2MDMwNA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
             </div>
@@ -343,11 +380,15 @@ export default function Home() {
               <img className='object-cover px-3' src="https://images.unsplash.com/photo-1591851395349-6d8c2fe76e24?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=100&ixid=MnwxfDB8MXxyYW5kb218MHx8amFja2V0fHx8fHx8MTY1ODE2MDQwMg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=100" />
             </div>
           </div>
-            <button className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+            <motion.button 
+             whileHover={{ scale: 1.2 }}
+             whileTap={{ scale: 0.8 }} 
+            className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 md:ml-52 ml-36'>Explore all</motion.button>
           </motion.div>
           <motion.div 
           variants={childContainer}
-          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-indigo-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-indigo-900 '>Newly <span className='text-gray-700 ml-1 font-normal'> launched skin products</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
+          className='w-60 md:w-5/12 lg:w-3/12 h-64 bg-indigo-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-indigo-900 '>Newly <span className='text-gray-700 ml-1 font-normal'> launched skin products</span></h3>        
+          <div className='flex flex-wrap justify-evenly items-center mt-1'>
             <div className='w-5/12 bg-indigo-100 h-24 mx-1 mt-2 flex justify-center'>
               <img className='object-cover px-3' src="https://media.istockphoto.com/photos/nude-eyeshadow-palette-and-makeup-artists-tools-on-a-marble-vanity-picture-id1370468785?b=1&k=20&m=1370468785&s=170667a&w=0&h=N194rFK8f58gVbr9PkjMsTAJuLZ2CkQwwSYFvNDEybo=" />
             </div>
@@ -361,7 +402,10 @@ export default function Home() {
               <img className='object-cover px-3' src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1624397359-leg-makeup-westmore-beauty-1624397347.jpg?crop=1xw:1xh;center,top&resize=480:*" />
             </div>
           </div>
-            <button className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+            <motion.button 
+             whileHover={{ scale: 1.2 }}
+             whileTap={{ scale: 0.8 }} 
+            className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 md:ml-52 ml-36'>Explore all</motion.button>
           </motion.div>
         </div>
       </motion.section>
@@ -380,7 +424,7 @@ export default function Home() {
         <div className='bg-sky-100 rounded flex justify-evenly py-4 md:py-6 space-y-10 flex-wrap'>
           <motion.div 
           variants={childContainer}
-          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-sky-100 mx-4 mt-8 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
+          className='w-60 md:w-5/12 lg:w-3/12 h-64 bg-sky-100 mx-4 mt-8 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
             <h3 className='text-lg italic font-medium text-center -mt-8 text-sky-900 '>Latest offers <span className='text-gray-700 ml-1 font-normal'> on laptops</span></h3>
             <div className='flex flex-wrap justify-evenly items-center mt-1'>
               <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
@@ -396,11 +440,14 @@ export default function Home() {
                 <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgJm33v_KJIB56QqwUOAabz-z675u9k1OJVdotmem4f_5Z5EopEYUBuliJA-kSs1-4_QM&usqp=CAU" />
               </div>
             </div>
-            <button className='italic text-sky-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+            <motion.button 
+             whileHover={{ scale: 1.2 }}
+             whileTap={{ scale: 0.8 }} 
+            className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 md:ml-52 ml-36'>Explore all</motion.button>
           </motion.div>
           <motion.div
           variants={childContainer}
-          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-sky-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
+          className='w-60 md:w-5/12 lg:w-3/12 h-64 bg-sky-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
             <h3 className='text-lg italic font-medium text-center -mt-8 text-sky-900 '>Latest offres <span className='text-gray-700 ml-1 font-normal'> on mobiles</span></h3>
             <div className='flex flex-wrap justify-evenly items-center mt-1'>
               <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
@@ -416,11 +463,14 @@ export default function Home() {
                 <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHvSivH4723K8DnwhhE2vmAdKDJXQ6v2i-8Jxih9Vnv9xqf26crWzfpisYiDrZyj5Tq00&usqp=CAU" />
               </div>
             </div>
-            <button className='italic text-sky-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+            <motion.button 
+             whileHover={{ scale: 1.2 }}
+             whileTap={{ scale: 0.8 }} 
+            className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 md:ml-52 ml-36'>Explore all</motion.button>
           </motion.div>
           <motion.div 
           variants={childContainer}
-          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-sky-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
+          className='w-60 md:w-5/12 lg:w-3/12 h-64 bg-sky-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
             <h3 className='text-lg italic font-medium text-center -mt-8 text-sky-900 '>Latest offers <span className='text-gray-700 ml-1 font-normal'> on accessories</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
               <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
                 <img className='object-cover px-3' src="https://media1.popsugar-assets.com/files/thumbor/vOI8FoYo2FF2hDtuxfnopnpB8qs/0x133:1500x1784/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2022/01/05/832/n/1922564/72f3c13561d5ea7a9d47e0.47038613_/i/best-new-fashion-arrivals-january.jpg" />
@@ -435,11 +485,14 @@ export default function Home() {
                 <img className='object-cover px-3' src="https://media.gettyimages.com/photos/fashionable-clothing-with-personal-accesories-picture-id1202485255?s=612x612" />
               </div>
             </div>
-            <button className='italic text-sky-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+            <motion.button 
+             whileHover={{ scale: 1.2 }}
+             whileTap={{ scale: 0.8 }} 
+            className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 md:ml-52 ml-36'>Explore all</motion.button>
           </motion.div>
           <motion.div
           variants={childContainer}
-          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-sky-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-sky-900 '>Latest offers <span className='text-gray-700 ml-1 font-normal'> on jeans</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
+          className='w-60 md:w-5/12 lg:w-3/12 h-64 bg-sky-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-sky-900 '>Latest offers <span className='text-gray-700 ml-1 font-normal'> on jeans</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
             <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
               <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeGZfOWmyROU5tyosmXYfnLoyhmzAS42gLtQ&usqp=CAU" />
             </div>
@@ -453,11 +506,14 @@ export default function Home() {
               <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN-fJQbNGhL_kxTirVKLEOtyiZshEwDhYn9Q&usqp=CAU" />
             </div>
           </div>
-            <button className='italic text-sky-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+            <motion.button 
+             whileHover={{ scale: 1.2 }}
+             whileTap={{ scale: 0.8 }} 
+            className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 md:ml-52 ml-36'>Explore all</motion.button>
           </motion.div>
           <motion.div
           variants={childContainer}
-          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-sky-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-sky-900 '>Latest offers <span className='text-gray-700 ml-1 font-normal'> on jackets</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
+          className='w-60 md:w-5/12 lg:w-3/12 h-64 bg-sky-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-sky-900 '>Latest offers <span className='text-gray-700 ml-1 font-normal'> on jackets</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
             <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
               <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn7dWcWJ4DJHMHAb-kuTgVIOrVcmVugDzd6g&usqp=CAU" />
             </div>
@@ -471,11 +527,14 @@ export default function Home() {
               <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWdig6WJ845Z_P7Oa3HwAyoASGgB8Tj1c4bg&usqp=CAU" />
             </div>
           </div>
-            <button className='italic text-sky-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+            <motion.button 
+             whileHover={{ scale: 1.2 }}
+             whileTap={{ scale: 0.8 }} 
+            className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 md:ml-52 ml-36'>Explore all</motion.button>
           </motion.div>
           <motion.div
           variants={childContainer}
-          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-sky-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-sky-900 '>Latest offers <span className='text-gray-700 ml-1 font-normal'> on skin products</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
+          className='w-60 md:w-5/12 lg:w-3/12 h-64 bg-sky-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-sky-900 '>Latest offers <span className='text-gray-700 ml-1 font-normal'> on skin products</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
             <div className='w-5/12 bg-sky-100 h-24 mx-1 mt-2 flex justify-center'>
               <img className='object-cover px-3' src="https://www.nykaa.com/beauty-blog/wp-content/uploads/images/issue286/EVERYTHING-YOU-NEED-TO-KNOW-ABOUT-LANEIGES-NEW-SKINCARE-SQUAD_OI.jpg" />
             </div>
@@ -489,7 +548,10 @@ export default function Home() {
               <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX8zUmqET_sVyfF4MQiFsTDJDA8nVKUhkH4tt4t7UukiYj5NUx-49cBmJscIHlq09-18o&usqp=CAU" />
             </div>
           </div>
-            <button className='italic text-sky-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+            <motion.button 
+             whileHover={{ scale: 1.2 }}
+             whileTap={{ scale: 0.8 }} 
+            className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 md:ml-52 ml-36'>Explore all</motion.button>
           </motion.div>
         </div>
         </div>
@@ -509,7 +571,7 @@ export default function Home() {
         <div className='bg-violet-100 rounded flex justify-evenly py-4 md:py-6 space-y-10 flex-wrap'>
           <motion.div
           variants={childContainer}
-          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-violet-100 mx-4 mt-8 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
+          className='w-60 md:w-5/12 lg:w-3/12 h-64 bg-violet-100 mx-4 mt-8 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
             <h3 className='text-lg italic font-medium text-center -mt-8 text-violet-900 '>Refurbrished<span className='text-gray-700 ml-1 font-normal'>laptops</span></h3>
             <div className='flex flex-wrap justify-evenly items-center mt-1'>
               <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
@@ -525,11 +587,14 @@ export default function Home() {
                 <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1EHECfC3ShQ2wolbvbEzAMYXHEz_4WqqZKSvj_R04mlfVlTSe5vGSCRi8YouYBCCdBVU&usqp=CAU" />
               </div>
             </div>
-            <button className='italic text-violet-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+            <motion.button 
+             whileHover={{ scale: 1.2 }}
+             whileTap={{ scale: 0.8 }} 
+            className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 md:ml-52 ml-36'>Explore all</motion.button>
           </motion.div>
           <motion.div 
           variants={childContainer}
-          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-violet-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
+          className='w-60 md:w-5/12 lg:w-3/12 h-64 bg-violet-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
             <h3 className='text-lg italic font-medium text-center -mt-8 text-violet-900 '>Refurbrished<span className='text-gray-700 ml-1 font-normal'>mobiles</span></h3>
             <div className='flex flex-wrap justify-evenly items-center mt-1'>
               <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
@@ -545,11 +610,14 @@ export default function Home() {
                 <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzHQNNH2yc6aDXcpXeg2ADEY8h8vVpVIeJ0A&usqp=CAU" />
               </div>
             </div>
-            <button className='italic text-violet-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+            <motion.button 
+             whileHover={{ scale: 1.2 }}
+             whileTap={{ scale: 0.8 }} 
+            className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 md:ml-52 ml-36'>Explore all</motion.button>
           </motion.div>
           <motion.div
           variants={childContainer}
-          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-violet-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
+          className='w-60 md:w-5/12 lg:w-3/12 h-64 bg-violet-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'>
             <h3 className='text-lg italic font-medium text-center -mt-8 text-violet-900 '>Refurbrished<span className='text-gray-700 ml-1 font-normal'> electronics</span></h3>        
             <div className='flex flex-wrap justify-evenly items-center mt-1'>
               <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
@@ -565,11 +633,14 @@ export default function Home() {
                 <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzAK0yIlgFFnbz5S7wsvSkEQF0VgMK7Id17g&usqp=CAU" />
               </div>
             </div>
-            <button className='italic text-violet-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+            <motion.button 
+             whileHover={{ scale: 1.2 }}
+             whileTap={{ scale: 0.8 }} 
+            className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 md:ml-52 ml-36'>Explore all</motion.button>
           </motion.div>
           <motion.div
           variants={childContainer}
-          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-violet-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-violet-900 '>Refurbrished<span className='text-gray-700 ml-1 font-normal'> accessories</span></h3>       
+          className='w-60 md:w-5/12 lg:w-3/12 h-64 bg-violet-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-violet-900 '>Refurbrished<span className='text-gray-700 ml-1 font-normal'> accessories</span></h3>       
            <div className='flex flex-wrap justify-evenly items-center mt-1'>
             <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
               <img className='object-cover px-3' src="https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBBTK-TRADE-WITARU728773DF0C753E/1593422454928_0..png" />
@@ -584,11 +655,14 @@ export default function Home() {
               <img className='object-cover px-3' src="https://vestadeal.com/wp-content/uploads/2022/01/2000-300x300.jpg" />
             </div>
           </div>
-            <button className='italic text-violet-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+            <motion.button 
+             whileHover={{ scale: 1.2 }}
+             whileTap={{ scale: 0.8 }} 
+            className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 md:ml-52 ml-36'>Explore all</motion.button>
           </motion.div>
           <motion.div 
           variants={childContainer}
-          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-violet-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-violet-900 '>Refurbrished <span className='text-gray-700 ml-1 font-normal'> air conditioners</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
+          className='w-60 md:w-5/12 lg:w-3/12 h-64 bg-violet-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-violet-900 '>Refurbrished <span className='text-gray-700 ml-1 font-normal'> air conditioners</span></h3>        <div className='flex flex-wrap justify-evenly items-center mt-1'>
             <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
               <img className='object-cover px-3' src="https://apollo-singapore.akamaized.net/v1/files/23zjgnozrcq62-IN/image;s=850x0" />
             </div>
@@ -602,11 +676,14 @@ export default function Home() {
               <img className='object-cover px-3' src="https://ik.imagekit.io/tudqzcdvr/tr:h-600,w-600,ot-Rentpelelo,otc-808080/rentpelelo_Career-refurbished-split-AC-on-rent-in-Navi-Mumbai-area_split-AC-on-rent-RentPeLelo.jpg?ik-sdk-version=php-1.2.2" />
             </div>
           </div>
-            <button className='italic text-violet-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+            <motion.button 
+             whileHover={{ scale: 1.2 }}
+             whileTap={{ scale: 0.8 }} 
+            className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 md:ml-52 ml-36'>Explore all</motion.button>
           </motion.div>
           <motion.div
           variants={childContainer}
-          className='w-11/12 md:w-5/12 lg:w-3/12 h-64 bg-violet-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-violet-900 '>Refurbrished<span className='text-gray-700 ml-1 font-normal'> on skin products</span></h3>       
+          className='w-60 md:w-5/12 lg:w-3/12 h-64 bg-violet-100 mx-4 rounded-md lg:rounded-lg shadow-sm md:shadow-lg'><h3 className='text-lg italic font-medium text-center -mt-8 text-violet-900 '>Refurbrished<span className='text-gray-700 ml-1 font-normal'> on skin products</span></h3>       
            <div className='flex flex-wrap justify-evenly items-center mt-1'>
             <div className='w-5/12 bg-violet-100 h-24 mx-1 mt-2 flex justify-center'>
               <img className='object-cover px-3' src="https://image.coolblue.nl/transparent/max/212x170/products/1638864" />
@@ -621,7 +698,10 @@ export default function Home() {
               <img className='object-cover px-3' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXyCK_9kmdGJ7nf6g1kPfB9lRT5osg4WHq_Q&usqp=CAU" />
             </div>
           </div>
-            <button className='italic text-violet-900 px-1 font-medium rounded-sm mt-4 ml-52'>Explore all</button>
+            <motion.button 
+             whileHover={{ scale: 1.2 }}
+             whileTap={{ scale: 0.8 }} 
+            className='italic text-indigo-900 px-1 font-medium rounded-sm mt-4 md:ml-52 ml-36'>Explore all</motion.button>
           </motion.div>
         </div>
         </div>
